@@ -13,8 +13,8 @@ function App(){
       <Header />
 
         <Route exact path="/" component={ViewButton} />
-        <Route exact path="/:crud" component={InputForm} />
         <Route exact path="/location" component={Kakaomap} />
+        <Route exact path="/:crud" component={InputForm} />
       
       
 

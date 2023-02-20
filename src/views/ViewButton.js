@@ -16,6 +16,9 @@ const ViewButton = () => {
       <Link to="/Delete">
         <button>최근 게시글 삭제</button>
       </Link>
+      <Link to="/location">
+        <button>카카오 지도</button>
+      </Link>
     </>
   );
 };
