@@ -1,6 +1,8 @@
 import axios from "axios";
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
+import Footer from '../layout/footer';
+import Header from '../layout/header';
 
 class InputForm extends Component {
   constructor(props) {
@@ -100,31 +102,33 @@ class InputForm extends Component {
 
     return (
       <>
-        <h1>게시글 {this.createHeaderName()}</h1>
-        {this.createArticleIdTag()}
-        <h3>제목</h3>
-        <input
-          type="text"
-          value={articleTitle}
-          onChange={(event) =>
-            this.setState({ articleTitle: event.target.value })
-          }
-        />
-        <br />
-        <h3>내용</h3>
-        <textarea
-          rows="10"
-          cols="20"
-          value={articleContent}
-          onChange={(event) =>
-            this.setState({ articleContent: event.target.value })
-          }
-        ></textarea>
-        <br /> <br />
-        {this.createCrudBtn()}
-        <Link to="/">
-          <button type="button">취소</button>
-        </Link>
+        <Header />
+          <h1>게시글 {this.createHeaderName()}</h1>
+          {this.createArticleIdTag()}
+          <h3>제목</h3>
+          <input
+            type="text"
+            value={articleTitle}
+            onChange={(event) =>
+              this.setState({ articleTitle: event.target.value })
+            }
+          />
+          <br />
+          <h3>내용</h3>
+          <textarea
+            rows="10"
+            cols="20"
+            value={articleContent}
+            onChange={(event) =>
+              this.setState({ articleContent: event.target.value })
+            }
+          ></textarea>
+          <br /> <br />
+          {this.createCrudBtn()}
+          <Link to="/">
+            <button type="button">취소</button>
+          </Link>
+        <Footer />
       </>
     );
   }
