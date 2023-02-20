@@ -1,4 +1,4 @@
-import { Route } from "react-router-dom";
+import { Route, Switch } from "react-router-dom";
 import InputForm from "./views/InputForm";
 import ViewButton from "./views/ViewButton";
 import Header from "./layout/header";
@@ -11,10 +11,14 @@ function App(){
     
     <>
       <Header />
-
-        <Route exact path="/" component={ViewButton} />
-        <Route exact path="/location" component={Kakaomap} />
-        <Route exact path="/:crud" component={InputForm} />
+        
+        <Switch>
+          <Route exact path="/location" component={Kakaomap} />
+          <Route exact path="/:crud" component={InputForm} />
+          <Route exact path="/" component={ViewButton} />
+        </Switch>
+    
+        
       
       
 

@@ -16,9 +16,13 @@ const Kakaomap = () => {
 
     }, []);
 
+    
+    
     return (
         <div id="map" style={{width:"100%",height:"350px"}}></div>
     );
+
+    
 }
 
 export default Kakaomap;
