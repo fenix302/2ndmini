@@ -1,14 +1,26 @@
 import { Route } from "react-router-dom";
-import Layout from "./layout/layout";
 import InputForm from "./views/InputForm";
+import ViewButton from "./views/ViewButton";
+import Header from "./layout/header";
+import Footer from "./layout/footer";
 
 function App(){
 
   return(
     
     <>
-      <Route exact path="/" component={Layout} />
-      <Route exact path="/:crud" component={InputForm} />
+      <Header />
+
+        <Route exact path="/" component={ViewButton} />
+        <Route exact path="/:crud" component={InputForm} />
+      
+      
+      
+      
+      
+      
+      
+      <Footer />
     </>
 
     
