@@ -7,7 +7,7 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          2차 미니 프로젝트 테스트 노드모듈도 깃허브연동되나??
         </p>
         <a
           className="App-link"
