@@ -1,15 +1,31 @@
  /* login.css */
 
 
-*{
+ *{
   list-style: none;
   text-decoration: none !important;
 }
+
+Button > a{
+  color: #fff;
+}
+
+Button > a:hover{
+  color: #fff;
+}
+
 
 html,
 body {
   height: 100vh;
 }
+
+.login_txt{
+  margin: 50px 0 50px 0;
+  text-align: center;
+}
+
+
 .wrapper {
   display: flex;
   flex-direction: column;

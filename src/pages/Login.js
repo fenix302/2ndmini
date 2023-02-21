@@ -27,6 +27,7 @@ const Login = () =>  {
             <Container fluid="sm">
                 <Row>
                     <Col md={{ span: 4, offset: 4 }}>
+                        <h1 className='login_txt'>로그인</h1>
                         <Form>
                             <Form.Group className="mb-3" controlId="formBasicId">
                                 <Form.Control type="id" placeholder="아이디를 입력하세요" />
@@ -37,8 +38,8 @@ const Login = () =>  {
                             </Form.Group>
                             
                             <div className="d-grid gap-2 mb-3">
-                                <Button variant="secondary" size='lg'>로그인</Button>
-                                <Button variant="outline-secondary" size='lg'><Link to={"/register"}>회원가입</Link></Button>
+                                <Button variant="primary" size='lg'>로그인</Button>
+                                <Button variant="secondary" size='lg'><Link to={"/register"}>회원가입</Link></Button>
                             </div>
                         </Form>
                     </Col>
