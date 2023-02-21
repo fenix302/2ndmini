@@ -22,6 +22,9 @@ const ViewButton = () => {
       <Link to="/about">
         <button>회사 소개</button>
       </Link>
+      <Link to="/Login">
+        <button>로그인</button>
+      </Link>
     </>
   );
 };

@@ -1,0 +1,31 @@
+ /* login.css */
+
+
+*{
+  list-style: none;
+  text-decoration: none !important;
+}
+
+html,
+body {
+  height: 100vh;
+}
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+}
+
+.column {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.loginInput {
+  height: 36px;
+  margin-left: 15px;
+  margin-right: 15px;
+}

@@ -5,6 +5,9 @@ import Header from "./layout/header";
 import Footer from "./layout/footer";
 import Kakaomap from "./test/location";
 import about from "./test/about";
+import Login from "./pages/Login";
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 function App(){
 
@@ -15,6 +18,7 @@ function App(){
         
         <Switch>
           <Route exact path="/about" component={about} />
+          <Route exact path="/Login" component={Login} />
           <Route exact path="/location" component={Kakaomap} />
           <Route exact path="/:crud" component={InputForm} />
           <Route exact path="/" component={ViewButton} />
