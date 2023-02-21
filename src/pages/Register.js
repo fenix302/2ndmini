@@ -4,12 +4,8 @@
 import React, { useRef, useState, useEffect } from "react"; // state관리와, ref 바인딩을 위한 hooks 라이브러리 임포트
 import { post } from "axios"; // 비동기 요청을 위한 axios 라이브러리
 import { Link, useHistory, useLocation, useParams } from "react-router-dom"; // 라우팅을 위한 라우터 라이브러리
-import { TextField } from "@rmwc/textfield"; // React Material 디자인 TextField 컴포넌트입니다.
 import { Button } from "react-bootstrap"; // React Material 디자인 Button 컴포넌트 입니다.
-import { Icon } from "@rmwc/icon"; // 프로필 아이콘을 위한 컴포넌트 추가
-import "@rmwc/button/styles"; // React Material Button 디자인 CSS 입니다.
-import "@rmwc/textfield/styles"; // React Material TextField 디자인 CSS 입니다.
-import "@rmwc/icon/styles"; // 아이콘 디자인 CSS입니다.
+import Form from 'react-bootstrap/Form';
 import "../css/register.css"; // 회원가입 페이지 커스텀 디자인 CSS 입니다.
 
 const Register = (props) => {
@@ -180,7 +176,7 @@ const Register = (props) => {
         <h1 className="registerTitle">회원가입</h1>
       </div>
       <div className="column">
-        <Icon icon="account_circle" className="profile_icon" ref={iconRef} />
+        <div icon="account_circle" className="profile_icon" ref={iconRef} />
         <img
           src={profile ? profile : tempFormData.profile}
           alt="profile_preview"
@@ -202,7 +198,7 @@ const Register = (props) => {
         />
       </div>
       <div className="column_reverse column">
-        <TextField
+        <Form.Group
           outlined
           label="이름"
           className="userName registerInput"
@@ -211,7 +207,7 @@ const Register = (props) => {
           name="userName"
           value={formData.userName ? formData.userName : ""}
         />
-        <TextField
+        <Form.Group
           outlined
           label="이메일"
           className="userEmail registerInput"
@@ -221,7 +217,7 @@ const Register = (props) => {
           name="userMail"
           value={formData.userMail ? formData.userMail : ""}
         />
-        <TextField
+        <Form.Group
           outlined
           label="휴대전화"
           className="userPhone registerInput"
@@ -230,7 +226,7 @@ const Register = (props) => {
           name="userPhone"
           value={formData.userPhone ? formData.userPhone : ""}
         />
-        <TextField
+        <Form.Group
           outlined
           label="아이디"
           className="userId registerInput"
@@ -239,7 +235,7 @@ const Register = (props) => {
           name="userId"
           value={formData.userId ? formData.userId : ""}
         />
-        <TextField
+        <Form.Group
           outlined
           label="비밀번호"
           className="userPassword registerInput"
@@ -248,7 +244,7 @@ const Register = (props) => {
           onChange={handleValueChange}
           name="userPassword"
         />
-        <TextField
+        <Form.Group
           outlined
           label="비밀번호 확인"
           className="userPassword2 registerInput"
