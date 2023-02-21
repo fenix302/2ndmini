@@ -21,7 +21,7 @@ footer{
 .contents{
     max-width: 1440px;
     margin: 0 auto;
-    padding-top: 30px;
+    padding-top: 34px;
 }
 
 .first{
@@ -30,18 +30,18 @@ footer{
 }
 
 .h1{
-    font-size: 24px;
-    font-weight: 700;
-    color: #fff;
+    font-size: 24px !important;
+    font-weight: 700 !important;
+    color: #fff ;
 }
 
 .h4{
-    font-size: 12px;
-    color: rgb(184, 179, 175);
-    font-weight: 100;
-    line-height: 20px;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    font-size: 12px !important;
+    color: rgb(184, 179, 175) !important;
+    font-weight: 100 !important;
+    line-height: 20px !important;
+    margin-top: 10px !important;
+    margin-bottom: 10px !important;
 }
 
 
@@ -50,6 +50,10 @@ footer{
 
     .first{
         padding: 0px;
+    }
+
+    .contents{
+        padding-top: 36px;
     }
   }
   
