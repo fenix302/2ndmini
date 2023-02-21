@@ -4,6 +4,7 @@ import ViewButton from "./views/ViewButton";
 import Header from "./layout/header";
 import Footer from "./layout/footer";
 import Kakaomap from "./test/location";
+import about from "./test/about";
 
 function App(){
 
@@ -13,6 +14,7 @@ function App(){
       <Header />
         
         <Switch>
+          <Route exact path="/about" component={about} />
           <Route exact path="/location" component={Kakaomap} />
           <Route exact path="/:crud" component={InputForm} />
           <Route exact path="/" component={ViewButton} />

@@ -19,6 +19,9 @@ const ViewButton = () => {
       <Link to="/location">
         <button>카카오 지도</button>
       </Link>
+      <Link to="/about">
+        <button>회사 소개</button>
+      </Link>
     </>
   );
 };
