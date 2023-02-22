@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import {
   Carousel,
   CarouselItem,
-  CarouselControl,
+  // CarouselControl,
   CarouselIndicators,
   CarouselCaption,
 } from 'reactstrap';
@@ -64,7 +64,7 @@ function ReactCarousel(args) {
         onClickHandler={goToIndex}
       />
       {slides}
-      <CarouselControl
+      {/* <CarouselControl
         direction="prev"
         directionText="Previous"
         onClickHandler={previous}
@@ -73,7 +73,7 @@ function ReactCarousel(args) {
         direction="next"
         directionText="Next"
         onClickHandler={next}
-      />
+      /> */}
     </Carousel>
   );
 }
