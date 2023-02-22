@@ -1,5 +1,6 @@
 import './header.css'
 import 'bootstrap/dist/css/bootstrap.css'
+import "https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
 
 
 const Header = () => {
