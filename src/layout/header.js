@@ -1,6 +1,6 @@
 import './header.css'
 import 'bootstrap/dist/css/bootstrap.css'
-import './bootstrap.bundle.js'
+
 
 const Header = () => {
     return(
