@@ -1,6 +1,5 @@
 import React, { useEffect } from 'react';
 import { Container, Table } from 'reactstrap';
-import ReactCarousel from '../test/carousel';
 import '../css/location.css'
 
 const {kakao} = window;
@@ -42,21 +41,28 @@ const Kakaomap = () => {
     
     return (
         <div className='location_box'>
-          <br />
-          <Container fluid="sm">
-            <h1>&nbsp;오시는 길&nbsp;</h1>
-          </Container>
-          <br />
+          <div className="page_header">
+            <div className="location_header">
+                  <div className="name">
+                        <p className="comeText">오시는 길</p>
+                    </div>
+              </div>
+          </div>
           
-          <ReactCarousel />
+          <div className='text1'>
+            <span className='name2'>&nbsp;문화재단&nbsp;</span>
+            <p className="announce">
+               <strong> ▷ 서울특별시 중구 무교로 15 남강타워빌딩 2층</strong><br />
+                  방문 시에는 반드시 마스크를 착용해 주시고, 코로나19 방역수칙을 지켜주시기
+                  바랍니다.
+               </p>
+          </div>
+          
+          <div id="map" style={{width:"1300px",height:"350px"}}></div>
+
           <br />
 
-          <div id="map" style={{width:"1300px",height:"350px"}}></div>
-      
-          <br />
-          <br />
-          <br />
-          <Container fluid="sm">
+          <Container fluid="lg">
             <Table bordered>
               <tbody>
                 <tr>
@@ -94,6 +100,39 @@ const Kakaomap = () => {
               </tbody>
             </Table>
           </Container>
+
+          <br />
+
+          <div className='text2'>
+            <span class="name2">&nbsp;서울시청 주차장 안내&nbsp;</span>
+              <p class="announce2">
+                  ▷ 주차공간이 많이 부족하오니 되도록 대중교통을 이용해 주시기 바랍니다.<br />
+                  ▷ 주차정보안내시스템(<a href="http://parking.seoul.go.kr/"
+                     >http://parking.seoul.go.kr/</a>)에서 시청 주변 공영주차장을 확인하실 수 있습니다. <br />
+                  ▷ 청사 시설물을 보호하기 위해 높이 2.3m 이상 차량은 주차장으로 진입할 수 없습니다.<br /><br />
+              </p>
+            <span class="name2">&nbsp;개방시간&nbsp;</span>
+              <p class="announce2">
+                <strong> 평일</strong> : 08:30~21:00 <br />
+                <strong> 주말 및 공휴일</strong> : 09:00 ~21:00 (시민청 개방시간과 동일)<br />
+                <thin>
+                    매월 넷째 주 수요일 '대중교통 이용의 날'은 서울시 및 산하기관, 자치구 부설
+                    주차장이 폐쇄됩니다.(장애인 차량, 긴급차량 등 제외)<br />
+                    서울광장 행사 등으로 인해 주차수요 과포화 및 교통 혼잡이 예상될 경우 주차장
+                    이용이 제한될 수 있습니다.</thin><br />
+                <br />
+              </p>
+            <span class="name2">&nbsp;주차요금&nbsp;</span>
+              <p class="announce2">
+                ▷ 경차 : 10분당 1,000원 (평일 09:00~18:00만 부과)<br />
+                ▷ 중형차 : 10분당 1,200원 (평일 09:00~18:00만 부과)
+              </p>
+          </div>
+
+          <br />
+          <br />
+          <br />
+          
         </div>
     );
 
