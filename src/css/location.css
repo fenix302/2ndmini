@@ -1,3 +1,9 @@
+@media (max-width : 800px) {
+    #map{
+        width: 480px !important;
+    }
+}
+
 .location_box{
     margin: 0 auto;
     text-align: center;
