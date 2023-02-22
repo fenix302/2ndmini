@@ -7,6 +7,7 @@ import about from "./test/about";
 import Kakaomap from "./pages/location";
 import Login from "./pages/Login";
 import Register from "./pages/Register";
+import Home from "./pages/Home";
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 
@@ -21,6 +22,7 @@ function App(){
           <Route exact path="/about" component={about} />
           <Route exact path="/Login" component={Login} />
           <Route exact path="/register" component={Register} />
+          <Route exact path="/management" component={Home} />
           <Route exact path="/location" component={Kakaomap} />
           <Route exact path="/:crud" component={InputForm} />
           <Route exact path="/" component={ViewButton} />
