@@ -25,7 +25,8 @@ const about = () => {
                         잡설이 길었지만 여튼 누구에게나 열린 문화 공간을 추구하여 결론적으로 어쩔티비</p>
                     <img src='/about.jpg' alt='about 이미지' className='img-fluid'/>
                 </div>
-                <Container className='history'>
+                <div  className='history'>
+                <Container className='container'>
                 <Row>
                     <Col>
                     <Card className='history-card'>
@@ -70,10 +71,13 @@ const about = () => {
                     </Card>
                     </Col>
                     <Col>
-                    <img src='/historyimg.jpg' alt='history 이미지' className="img-responsive history-img"/>
+                    <Card className='d-flex align-self-center'>
+                    <img src='/historyimg.jpg' alt='history 이미지' className="history-img"/>
+                    </Card>
                     </Col>
                     </Row>
                     </Container>
+                    </div>
                 </div>
                 
         </>
