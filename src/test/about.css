@@ -25,21 +25,21 @@
 }
 
 .main-information{
-    background-color: antiquewhite;
-    margin-top: 140px;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    /* background-color: antiquewhite; */
+    /* margin-top: 30px; */
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
 .container{
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
 .history{
-    background-color: aqua;
+    background-color: #ECEAE6;
     line-height: 100%;
-    margin-top: 140px;
+    margin-top: 30px;
 }
 
 .history-list{
@@ -51,7 +51,12 @@
 }
 
 .history-card{
-    height: 100% !important;
+    border-color: #ECEAE6 !important;
+
+}
+
+.history-card-list{
+    background-color: #ECEAE6 !important;
 }
 
 @media (min-width:1420px){

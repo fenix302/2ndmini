@@ -31,7 +31,7 @@ const about = () => {
                     <Col>
                     <Card className='history-card'>
                         <ListGroup className="list-group-flush history-list list-group">
-                            <ListGroup.Item>
+                            <ListGroup.Item className='history-card-list'>
                                 <Card.Body>
                                 <Card.Title>Card Title</Card.Title>
                                 <Card.Text>
@@ -40,7 +40,7 @@ const about = () => {
                                 </Card.Text>
                                 </Card.Body>
                             </ListGroup.Item>
-                            <ListGroup.Item>
+                            <ListGroup.Item className='history-card-list'>
                                 <Card.Body>
                                 <Card.Title>Card Title</Card.Title>
                                 <Card.Text>
@@ -49,7 +49,7 @@ const about = () => {
                                 </Card.Text>
                                 </Card.Body>
                             </ListGroup.Item>
-                            <ListGroup.Item>
+                            <ListGroup.Item className='history-card-list'>
                                 <Card.Body>
                                 <Card.Title>Card Title</Card.Title>
                                 <Card.Text>
@@ -58,7 +58,7 @@ const about = () => {
                                 </Card.Text>
                                 </Card.Body>
                             </ListGroup.Item>
-                            <ListGroup.Item>
+                            <ListGroup.Item className='history-card-list'>
                                 <Card.Body>
                                 <Card.Title>Card Title</Card.Title>
                                 <Card.Text>
