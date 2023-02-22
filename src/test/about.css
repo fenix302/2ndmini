@@ -10,17 +10,36 @@
     font-family: 'Noto Sans KR', sans-serif;
  }
 
+ .row{
+    float: none;
+    margin: 0 auto;
+ }
+
+ .col{
+    float: none;
+    margin: 0 auto;
+ }
+
 .about-top{
     background-color: red;
 }
 
 .main-information{
     background-color: antiquewhite;
+    margin-top: 140px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.container{
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 .history{
     background-color: aqua;
     line-height: 100%;
+    margin-top: 140px;
 }
 
 .history-list{
@@ -28,10 +47,15 @@
 }
 
 .history-img{
-    float: left;
-    width: 100%;
+    
 }
 
 .history-card{
     height: 100% !important;
+}
+
+@media (min-width:1420px){
+    .history-img{
+        width: 100%;
+    }
 }
