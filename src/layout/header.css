@@ -15,8 +15,10 @@
 
 /* 헤더 */
 header{
-    height: 80px;
+    height: 82px;
     background-color: #fff;
+    max-width: 1440px !important;
+    margin: 0 auto !important;
 }
 
 .container{
@@ -60,8 +62,23 @@ header{
 }
 
 
+@media (min-width: 985px) {
 
-@media (min-width: 1100px) {
+    .dropdown{
+        margin-left: 40px;
+    }    
+}
+
+
+
+@media (min-width: 1130px) {
+
+    .dropdown{
+        margin-left: 50px;
+    }    
+}
+
+@media (min-width: 1200px) {
 
     .dropdown{
         margin-left: 70px;
@@ -70,7 +87,7 @@ header{
     
 }
 
-@media (min-width: 1240px) {
+@media (min-width: 1310px) {
 
     .dropdown{
         margin-left: 100px;
