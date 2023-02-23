@@ -19,10 +19,10 @@ const Header = () => {
                     <span class="navbar-toggler-icon"></span>
                 </button>               
 
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav">
+                <div class="collapse navbar-collapse navigation_bar" id="navbarSupportedContent">
+                    <ul class="navbar-nav nav_right">
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">About</a>
+                            <a class="nav-link dropdown-toggle main_nav" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">About</a>
                             <ul class="dropdown-menu">
                                 <li>
                                     <Link to="/about">
@@ -39,37 +39,39 @@ const Header = () => {
                         </li>
 
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Community</a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="${context}/work/notice/retrieveBoardList.do">공지사항</a></li>
-                                <li><a class="dropdown-item" href="${context}/work/generalboard/retrieveBoardList.do">자유게시판</a></li>
-                                <li><a class="dropdown-item" href="${context}/work/comm/retrieveBoardList.do">커뮤니티</a></li>
-                                <li><a class="dropdown-item" href="${context}/work/consulting/retrieveBoardList.do">상담신청게시판</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">로그인</a>
-                            <ul class="dropdown-menu">
-                                <li>
-                                    <Link to="/Login">
-                                        <a class="dropdown-item">로그인</a>
-                                    </Link>
-                                </li>
-           
-                            </ul>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">강좌 목록</a>
+                            <a class="nav-link dropdown-toggle main_nav" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Course</a>
                             <ul class="dropdown-menu">
                                 <li>
                                     <Link to="/LectureList">
                                         <a class="dropdown-item">강좌 목록</a>
                                     </Link>
                                 </li>
-           
                             </ul>
                         </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle main_nav" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Community</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="${context}/work/notice/retrieveBoardList.do">공지사항</a></li>
+                                <li><a class="dropdown-item" href="${context}/work/generalboard/retrieveBoardList.do">자유게시판</a></li>
+                                <li><a class="dropdown-item" href="${context}/work/comm/retrieveBoardList.do">커뮤니티</a></li>
+                                <li><a class="dropdown-item" href="${context}/work/consulting/retrieveBoardList.do">상담신청게시판</a></li>
+                            </ul>
+                        </li>                        
                     </ul>
+
+                    
+                </div>
+
+                {/* 로그인 */}
+                <div class="collapse navbar-collapse navigation_bar" id="navbarSupportedContent">
+                    <ul class="navbar-nav nav_right">                    
+                        <li class="nav-item dropdown login">
+                            <Link to="/Login">
+                                <a class="nav-link login_link" href="#" role="button">로그인</a>
+                            </Link>                         
+                        </li>                        
+                    </ul>                    
                 </div>
 
             </nav>
