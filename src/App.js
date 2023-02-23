@@ -9,6 +9,7 @@ import Login from "./pages/Login";
 import Register from "./pages/Register";
 import Home from "./pages/Home";
 import LectureList from "./pages/LectureList";
+import BoardList from "./pages/BoardList";
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 
@@ -20,6 +21,7 @@ function App(){
       <Header />
         
         <Switch>
+          <Route exact path="/BoardList" component={BoardList} />
           <Route exact path="/LectureList" component={LectureList} />
           <Route exact path="/about" component={about} />
           <Route exact path="/Login" component={Login} />

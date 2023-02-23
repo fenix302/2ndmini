@@ -1,14 +1,16 @@
 import axios from "axios";
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
-
+import { Container } from 'react-bootstrap';
+import "../css/board.css"
 class InputForm extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      articleId: "",
-      articleTitle: "",
-      articleContent: "",
+      bno: "",
+      title: "",
+      content: "",
+      writer: "",
       crud: props.match.params.crud,
     };
     if (this.state.crud !== "Insert") {
@@ -25,7 +27,7 @@ class InputForm extends Component {
     } else if (crud === "Delete") {
       return "삭제";
     } else if (crud === "Insert") {
-      return "등록";
+      return "새 글쓰기";
     }
   }
 
@@ -37,13 +39,13 @@ class InputForm extends Component {
       const crudName =
       crud === "Update" ? "수정" : crud === "Insert" ? "등록" : "삭제";
       return (
-        <button onClick={() => this.crud()}>게시글 {crudName}</button>
+        <button className="btn2 btn-secondary" onClick={() => this.crud()}> {crudName}하기</button>
       );
     }
   }
 
   crud() {
-    const { articleId, articleTitle, articleContent, crud } = this.state;
+    const { bno, title, content, writer, crud } = this.state;
 
     let crudType = "";
 
@@ -58,10 +60,11 @@ class InputForm extends Component {
     }
 
     let form = new FormData();
-    form.append("articleContent", articleContent);
-    form.append("articleTitle", articleTitle);
+    form.append("content", content);
+    form.append("title", title);
+    form.append("writer", writer);
     if (crud !== "Insert") {
-      form.append("articleId", articleId);
+      form.append("bno", bno);
     }
 
     axios
@@ -77,54 +80,82 @@ class InputForm extends Component {
     axios.get("/view.do").then((res) => {
       const data = res.data;
       this.setState({
-        articleId: data.articleId,
-        articleTitle: data.articleTitle,
-        articleContent: data.articleContent,
+        bno: data.bno,
+        title: data.title,
+        writer: data.writer,
+        content: data.content,
       });
     });
   }
 
-  createArticleIdTag() {
-    const articleId = this.state.articleId;
+  createBnoTag() {
+    const bno = this.state.bno;
     const crud = this.state.crud;
     if (crud !== "Insert") {
-      return <input type="hidden" value={articleId} readOnly />;
+      return <input type="hidden" value={bno} readOnly />;
     } else {
       return null;
     }
   }
 
   render() {
-    const articleTitle = this.state.articleTitle;
-    const articleContent = this.state.articleContent;
+    const title = this.state.title;
+    const content = this.state.content;
+    const writer = this.state.writer;
 
     return (
       <>
-        <h1>게시글 {this.createHeaderName()}</h1>
-        {this.createArticleIdTag()}
-        <h3>제목</h3>
-        <input
-          type="text"
-          value={articleTitle}
-          onChange={(event) =>
-            this.setState({ articleTitle: event.target.value })
-          }
-        />
-        <br />
-        <h3>내용</h3>
-        <textarea
-          rows="10"
-          cols="20"
-          value={articleContent}
-          onChange={(event) =>
-            this.setState({ articleContent: event.target.value })
-          }
-        ></textarea>
-        <br /> <br />
-        {this.createCrudBtn()}
-        <Link to="/">
-          <button type="button">취소</button>
-        </Link>
+        <Container>
+          <h1 className="header"> {this.createHeaderName()}</h1>
+          {this.createBnoTag()}
+          <h3 className="header1">
+          <font color="red">*&nbsp;</font>
+          제목
+          </h3>
+          <div className="com-md-11">
+          <input className="form-control"
+            type="text" name="title" id="title" required="required" maxLength={50}
+            value={title}
+            onChange={(event) =>
+              this.setState({ title: event.target.value })
+            }
+          />
+          </div>
+          <br />
+
+          <h3 className="header1">
+          <font color="red">*&nbsp;</font>
+          작성자
+          </h3>
+          <div className="com-md-11">
+          <input className="form-control"
+            type="text" name="writer" id="writer" required="required" maxLength={50}
+            value={writer}
+            onChange={(event) =>
+              this.setState({ writer: event.target.value })
+            }
+          />
+          </div>
+          <br />
+
+          <h3 className="header1">
+          <font color="red">*&nbsp;</font>
+          내용
+          </h3>
+          <textarea className="form-control" name="content"
+          id="content" cols={10} rows={15} required="required"
+          placeholder="본문을 입력해 주세요"
+            value={content}
+            onChange={(event) =>
+              this.setState({ content: event.target.value })
+            }
+          ></textarea>
+          <br /> <br />
+          {this.createCrudBtn()}
+          <Link to="/">
+            <button className="btn2 btn-danger" type="button">취소</button>
+          </Link>
+        </Container>  
       </>
     );
   }

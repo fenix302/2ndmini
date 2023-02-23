@@ -8,6 +8,10 @@ const ViewButton = () => {
 
         <h1>메인페이지 만들고 파일이름 바꾸기</h1>
 
+        <Link to="/BoardList">
+          <Button variant="outline-secondary" size='lg'>게시판 리스트</Button>
+        </Link>
+
         <Link to="/Insert">
           <Button variant="outline-secondary" size='lg'>게시글 등록</Button>
         </Link>
