@@ -1,13 +1,23 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { Button } from 'react-bootstrap';
+import '../css/main.css'
 
 const ViewButton = () => {
   return (
     <>
+      <div class="con">
+        <div class="banner">
+          <div class="owl-carousel">
+              <div class="banner_img"> <img src="img/location.jpg" alt="banner1"/> </div>  
+            </div>
+        </div>
 
-        <h1>메인페이지 만들고 파일이름 바꾸기</h1>
+      </div>
 
+
+        
+      {/* 버튼 */}
         <Link to="/BoardList">
           <Button variant="outline-secondary" size='lg'>게시판 리스트</Button>
         </Link>
