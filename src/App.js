@@ -10,6 +10,7 @@ import Register from "./pages/Register";
 import Home from "./pages/Home";
 import LectureList from "./pages/LectureList";
 import BoardList from "./pages/BoardList";
+import Faq from "./pages/Faq";
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 
@@ -30,6 +31,8 @@ function App(){
           <Route exact path="/location" component={Kakaomap} />
           <Route exact path="/:crud" component={InputForm} />
           <Route exact path="/" component={ViewButton} />
+          <Route exact path="/Faq" component={Faq} />
+          
         </Switch>
     
         

@@ -24,6 +24,9 @@ const ViewButton = () => {
         <Link to="/Delete">
           <Button variant="outline-secondary" size='lg'>최근 게시글 삭제</Button>
         </Link>
+        <Link to="/Faq">
+          <Button variant="outline-secondary" size='lg'>Faq</Button>
+        </Link>
 
     </>
   );
