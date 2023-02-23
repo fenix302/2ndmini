@@ -13,11 +13,11 @@ const about = () => {
     return(
         <>
             <div className='about'>
-            <Container fluid className='about-top'>
-                <Row>
-                    <Col><h1 class="text-center">회사 소개</h1></Col>
-                </Row>
-            </Container>
+            <div className="about-header">
+                  <div className="name">
+                        <p className="about-header-text">회사 소개</p>
+                    </div>
+              </div>
                 <div className='main-information text-center'>
                     <h2>구로 문화센터</h2>
                     <p>저희 문화센터는 어쩌구저쩌구 교육 서비스를 제공하기 위해 이런저런 노력을 하고 있습니다 <br />
