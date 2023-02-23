@@ -8,6 +8,7 @@ import Kakaomap from "./pages/location";
 import Login from "./pages/Login";
 import Register from "./pages/Register";
 import Home from "./pages/Home";
+import LectureList from "./pages/LectureList";
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 
@@ -19,6 +20,7 @@ function App(){
       <Header />
         
         <Switch>
+          <Route exact path="/LectureList" component={LectureList} />
           <Route exact path="/about" component={about} />
           <Route exact path="/Login" component={Login} />
           <Route exact path="/register" component={Register} />

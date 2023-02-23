@@ -58,6 +58,17 @@ const Header = () => {
            
                             </ul>
                         </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">강좌 목록</a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <Link to="/LectureList">
+                                        <a class="dropdown-item">강좌 목록</a>
+                                    </Link>
+                                </li>
+           
+                            </ul>
+                        </li>
                     </ul>
                 </div>
 
