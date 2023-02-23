@@ -57,7 +57,18 @@ const Header = () => {
                                 <li><a class="dropdown-item" href="${context}/work/comm/retrieveBoardList.do">커뮤니티</a></li>
                                 <li><a class="dropdown-item" href="${context}/work/consulting/retrieveBoardList.do">상담신청게시판</a></li>
                             </ul>
-                        </li>                        
+                        </li>  
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle main_nav" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Other</a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <Link to="/">
+                                        <a class="dropdown-item">무언가 생기겠죠?</a>
+                                    </Link>
+                                </li>
+                            </ul>
+                        </li>                      
                     </ul>
 
                     

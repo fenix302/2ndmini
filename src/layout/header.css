@@ -21,6 +21,7 @@ header{
 
 .container{
     max-width: 1440px !important;
+    background-color: #fff;
 }
 
 .nav_right{
@@ -36,12 +37,42 @@ header{
     vertical-align: top !important;
 }
 
-.navigation_bar{
-    padding-left: 120px;
-}
-
 .login > .login_link{
    padding-left: 100px !important;
 }
 
+/* 드랍다운 메뉴 설정 변경 */
+.dropdown{
+    margin-left: 70px;
+}
+.dropdown-menu{
+    background-color: #fff !important;
+    border: 1px solid black !important;
+    margin-top: 14px !important;
+}
+.dropdown-menu li{
+    padding: 6px 0px 6px 0px;
+}
+.dropdown-menu li a {
+    font-size: 16px;
+    text-align: center;
+    font-weight: 400;
+}
 
+
+
+@media (min-width: 1100px) {
+
+    .dropdown{
+        margin-left: 70px;
+    }
+
+    
+}
+
+@media (min-width: 1240px) {
+
+    .dropdown{
+        margin-left: 100px;
+    }
+}
