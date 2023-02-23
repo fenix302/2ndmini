@@ -2,6 +2,8 @@ import './header.css'
 import about from "../test/about";
 import 'bootstrap/dist/css/bootstrap.css'
 import "https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+import { Link } from "react-router-dom";
+import { Button } from 'react-bootstrap';
 
 
 const Header = () => {
@@ -22,8 +24,16 @@ const Header = () => {
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">About</a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="/about">회사소개</a></li>
-                                <li><a class="dropdown-item" href="#">오시는 길</a></li>
+                                <li>
+                                    <Link to="/about">
+                                        <a class="dropdown-item">회사소개</a>
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link to="/location">
+                                        <a class="dropdown-item">오시는 길</a>
+                                    </Link>
+                                </li>
                                 <li><a class="dropdown-item" href="#">FAQ</a></li>
                             </ul>
                         </li>
@@ -37,7 +47,17 @@ const Header = () => {
                                 <li><a class="dropdown-item" href="${context}/work/consulting/retrieveBoardList.do">상담신청게시판</a></li>
                             </ul>
                         </li>
-                        
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">로그인</a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <Link to="/Login">
+                                        <a class="dropdown-item">로그인</a>
+                                    </Link>
+                                </li>
+           
+                            </ul>
+                        </li>
                     </ul>
                 </div>
 

@@ -5,6 +5,9 @@ import { Button } from 'react-bootstrap';
 const ViewButton = () => {
   return (
     <>
+
+        <h1>메인페이지 만들고 파일이름 바꾸기</h1>
+
         <Link to="/Insert">
           <Button variant="outline-secondary" size='lg'>게시글 등록</Button>
         </Link>
@@ -17,15 +20,7 @@ const ViewButton = () => {
         <Link to="/Delete">
           <Button variant="outline-secondary" size='lg'>최근 게시글 삭제</Button>
         </Link>
-        <Link to="/location">
-          <Button variant="outline-secondary" size='lg'>카카오 지도</Button>
-        </Link>
-        <Link to="/about">
-          <Button variant="outline-secondary" size='lg'>회사 소개</Button>
-        </Link>
-        <Link to="/Login">
-          <Button variant="outline-secondary" size='lg'>로그인</Button>
-        </Link>
+
     </>
   );
 };
