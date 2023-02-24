@@ -29,9 +29,9 @@ function App(){
           <Route exact path="/register" component={Register} />
           <Route exact path="/management" component={Home} />
           <Route exact path="/location" component={Kakaomap} />
+          <Route exact path="/Faq" component={Faq} />
           <Route exact path="/:crud" component={InputForm} />
           <Route exact path="/" component={ViewButton} />
-          <Route exact path="/Faq" component={Faq} />
           
         </Switch>
     

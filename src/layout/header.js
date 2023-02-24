@@ -34,7 +34,11 @@ const Header = () => {
                                         <a class="dropdown-item">오시는 길</a>
                                     </Link>
                                 </li>
-                                <li><a class="dropdown-item" href="#">FAQ</a></li>
+                                <li>
+                                    <Link to="/faq">
+                                        <a class="dropdown-item" href="#">FAQ</a>
+                                    </Link>
+                                </li>
                             </ul>
                         </li>
 
