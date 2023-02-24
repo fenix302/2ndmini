@@ -100,7 +100,8 @@ const FAQ = () => {
 
   return (
     <div>
-      <div>faq</div>
+      <div>faq</div> 
+      {/* 이부분이 현재 나오고 있는 글자  */}
       <CategoryFilter
         categories={categories}
         category={category}

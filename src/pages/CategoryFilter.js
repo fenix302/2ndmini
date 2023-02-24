@@ -40,3 +40,4 @@ const CategoryFilter = ({ categories, category, setCatecory }) => {
 };
 
 export default CategoryFilter;
+
