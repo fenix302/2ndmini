@@ -48,7 +48,7 @@ footer{
 @media (min-width: 1440px) {
 
     .first{
-        padding: 0px;
+        padding: 0px !important;
     }
 
     .contents{
