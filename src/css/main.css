@@ -27,6 +27,5 @@
 .banner_img>img{
     width: 100% !important;
     object-fit: cover !important;
-    min-height: 300px;
     max-height: 695px;
 }

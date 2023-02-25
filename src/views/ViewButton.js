@@ -9,7 +9,7 @@ const ViewButton = () => {
       <div class="con">
         <div class="banner">
           <div class="owl-carousel">
-              <div class="banner_img"> <img src="img/location.jpg" alt="banner1"/> </div>  
+              <div class="banner_img"> <img src="img/banner1.jpg" alt="banner1"/> </div>  
             </div>
         </div>
 
