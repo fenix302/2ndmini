@@ -13,6 +13,8 @@ const ViewButton = () => {
             </div>
         </div>
 
+        <div class="content"></div>
+
       </div>
 
 

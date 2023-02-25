@@ -15,7 +15,7 @@
 
 /* 헤더 */
 header{
-    height: 82px;
+    height: 80px ;
     background-color: #fff;
     max-width: 1440px !important;
     margin: 0 auto !important;
@@ -32,10 +32,20 @@ header{
     justify-content: space-between;
 }
 
+.navbar{
+    padding: 0px !important;
+}
+
 /* 로고 */
+
+.navbar-brand{
+    padding: 5px 0px 5px 0px !important;
+}
 .navbar-brand img{
-    max-height: 25px;
-    margin-top: 15px;
+    height: 36px;
+    width: cover !important;
+    margin: 15px 0px 0px 0px !important;
+    padding: 0px !important;
     vertical-align: top !important;
 }
 
