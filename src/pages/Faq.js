@@ -3,6 +3,7 @@ import CategoryFilter from "../pages/CategoryFilter";
 
 import "../css/FAQ.css";
 
+
 const categories = [
   {
     name: "자주 묻는 질문",
@@ -98,21 +99,35 @@ const FAQ = () => {
     );
   }, [category]);
 
+  
   return (
     <div>
-      <div>faq</div> 
+
+
+  <div className="about_FAQ">
+  <div className="name">
+  <p className="about-header-text">FAQ</p>
+  </div>
+  </div>
+
+      {/* <div>faq</div>  */}
+      
       {/* 이부분이 현재 나오고 있는 글자  */}
+      <div className="fqa_all">
+
       <CategoryFilter
         categories={categories}
         category={category}
         setCatecory={setCatecory}
       />
+      </div>
       <div className="fqa-parent">
         <div className="faq-list">
           {showList.map((item, index) => getQnACard(item, index))}     
         </div>
       </div>
     </div>
+
   );
 };
 
