@@ -27,8 +27,6 @@ function App(){
           <Route exact path="/LectureList" component={LectureList} />
           <Route exact path="/about" component={about} />
           <Route exact path="/Login" component={Login} />
-          <Route exact path="/register" component={Register} />
-          <Route exact path="/management" component={Home} />
           <Route exact path="/registration" component={Registration} />
           <Route exact path="/location" component={Kakaomap} />
           <Route exact path="/Faq" component={Faq} />
