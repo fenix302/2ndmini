@@ -11,6 +11,7 @@ import Home from "./pages/Home";
 import LectureList from "./pages/LectureList";
 import BoardList from "./pages/BoardList";
 import Faq from "./pages/Faq";
+import Registration from "./pages/Registration";
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 
@@ -28,6 +29,7 @@ function App(){
           <Route exact path="/Login" component={Login} />
           <Route exact path="/register" component={Register} />
           <Route exact path="/management" component={Home} />
+          <Route exact path="/registration" component={Registration} />
           <Route exact path="/location" component={Kakaomap} />
           <Route exact path="/Faq" component={Faq} />
           <Route exact path="/:crud" component={InputForm} />
