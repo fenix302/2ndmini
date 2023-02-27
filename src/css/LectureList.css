@@ -21,11 +21,60 @@
  }
 
 .popular-lecture{
+   width: 90% !important;
+   height: 470px;
+   margin-left: auto;
+   margin-right: auto;
+   margin-bottom: 100px !important;
+   position: relative;
+   background-color: antiquewhite;
+}
+
+.entire-lecture{
    width: 100%;
-   height: 400px;
+   height: 2000px;
+   margin-bottom: 30px;
 }
 
-.popular-lecture-carousel{
-
+.main-lecture, .best-lecture, .recommend-lecture, .event-lecture, .price-down-lecture {
+   width: 90% !important;
+   height: 470px;
+   margin: 0 auto !important;
+   position: relative;
 }
+
+.bhRnqO{
+   right: -4% !important;
+}
+
+.kVtMtA{
+   left: -4% !important;
+}
+
+.bqyzQp{
+   /* 인기 강좌 4개 아이템의 길이를 조절합니다. */
+   top: 10%;
+   height: 70%;
+}
+
+.bghjHX{
+   /* 인기 강좌 4개 아이템과 양 옆 마진을 포함한 값의 높이를 조절합니다. */
+   height: 100% !important;
+}
+
+.bVoXXg{
+/* 인기강좌 캐러셀의 이미지를 담은 아이템의 길이를 조절합니다. */
+   height: 120%;
+}
+
+@media screen and (max-width: 767px){
+.hLycdF {
+    grid-template-columns: repeat(2,50%) !important;
+}
+}
+
+@media (min-width:1420px) {
+   
+}
+
 
