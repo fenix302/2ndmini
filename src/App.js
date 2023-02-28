@@ -6,8 +6,6 @@ import Footer from "./layout/footer";
 import about from "./test/about";
 import Kakaomap from "./pages/location";
 import Login from "./pages/Login";
-import Register from "./pages/Register";
-import Home from "./pages/Home";
 import LectureList from "./pages/LectureList";
 import BoardList from "./pages/BoardList";
 import Faq from "./pages/Faq";
@@ -27,8 +25,6 @@ function App(){
           <Route exact path="/LectureList" component={LectureList} />
           <Route exact path="/about" component={about} />
           <Route exact path="/Login" component={Login} />
-          <Route exact path="/register" component={Register} />
-          <Route exact path="/management" component={Home} />
           <Route exact path="/registration" component={Registration} />
           <Route exact path="/location" component={Kakaomap} />
           <Route exact path="/Faq" component={Faq} />

@@ -45,3 +45,17 @@ body {
   margin-left: 15px;
   margin-right: 15px;
 }
+/* 버튼 색상 */
+.d-grid> button{
+  background-color: #a09785 !important;
+  border-color: #a09785 !important;
+}
+
+.d-grid> button:hover{
+  background-color: #928a79 !important;
+  border-color: #928a79 !important;
+}
+
+.row{
+  margin-bottom: 140px !important;
+}

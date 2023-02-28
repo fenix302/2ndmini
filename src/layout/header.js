@@ -4,9 +4,40 @@ import 'bootstrap/dist/css/bootstrap.css'
 import "https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
 import { Link } from "react-router-dom";
 import { Button } from 'react-bootstrap';
+import React, { useEffect, useState } from 'react';
+
 
 
 const Header = () => {
+    
+    // 로그인,로그아웃
+    const [isLogin, setIsLogin] = useState(false)
+    const name = sessionStorage.name
+        // 로그인 상태 관리
+        
+         useEffect(() => {
+           if(sessionStorage.getItem('member_id') === null){
+           // sessionStorage 에 user_id 라는 key 값으로 저장된 값이 없다면
+             console.log('isLogin ?? :: ', isLogin)
+           } else {
+           // sessionStorage 에 user_id 라는 key 값으로 저장된 값이 있다면
+           // 로그인 상태 변경
+             setIsLogin(true)
+             console.log('isLogin ?? :: ', isLogin)
+           }
+         })
+        
+         const onLogout = () => {
+            alert("로그아웃 되셨습니다.");
+            // sessionStorage 에 user_id 로 저장되어있는 아이템을 삭제한다.
+            sessionStorage.removeItem('member_id')
+            sessionStorage.removeItem('name')
+
+            // App 으로 이동(새로고침)
+            document.location.href = '/'
+        }
+
+
     return(
         <header>
             <nav className="navbar navbar-expand-lg navbar-light container justify-content-between" id="navbar-example2">
@@ -97,9 +128,15 @@ const Header = () => {
                 <div class="collapse navbar-collapse navigation_bar" id="navbarSupportedContent">
                     <ul class="navbar-nav nav_right">                    
                         <li class="nav-item dropdown login">
-                            <Link to="/Login">
-                                <a class="nav-link login_link" href="#" role="button">로그인</a>
-                            </Link>                         
+                            {isLogin 
+                            ?   <div className='myLogout'>
+                                    <label for="logOut">{name}님 환영합니다</label>
+                                    <a id='logOut' class="nav-link" href="#" onClick={onLogout}>로그아웃</a>
+                                </div>
+                            :   <Link to="/Login">
+                                    <a class="nav-link login_link" href="#" role="button">로그인</a>
+                                </Link>
+                            }
                         </li>                        
                     </ul>                    
                 </div>

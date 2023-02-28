@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Row, Col, Table } from "reactstrap";
+import { Container, Row, Col, Table, Button } from "reactstrap";
 import '../css/registration.css'
 
 const Registration = () => {
@@ -7,9 +7,17 @@ const Registration = () => {
         <>
             <Container>
                 <div className="registLec">
-                    <p>[3/19 10:00] 
-                    <br/>구로 문화센터 강좌제목 수강신청
-                    </p>
+                    <Row lg="2" xs="1">
+                        <Col lg="10">
+                            <p>[3/19 10:00] 
+                            <br/>구로 문화센터 강좌제목 수강신청
+                            </p>
+                        </Col>
+                        <Col lg="2">
+                            <Button color="success">장바구니</Button>{' '}
+                            <Button color="danger">신청하기</Button>
+                        </Col>
+                    </Row>
                 </div>
                 <Row lg="2" xs="1">
                     <Col>
@@ -19,7 +27,7 @@ const Registration = () => {
                                     <h3>강좌 소개</h3>
                                 </div>
                                 <div className="LectureArea">
-                                    <img src="logo192.png" />
+                                    <img src="logo192.png"/>
                                     <h5>강좌 제목</h5><br/  >
                                     <span>
                                         창의성과 감성이 풍부해지는 실질적인 강좌
