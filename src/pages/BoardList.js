@@ -30,14 +30,6 @@ class BoardList extends Component {
 		})
 	}
 
-	postData() {
-		// 게시글 리스트를 읽어와 저장
-		axios.post('/BoardList').then(res => {
-			const data = res.data
-			this.setState({ data: this.appendChkOpt(data.data), ...data })
-		})
-	}
-
 	search() {
 		const { search } = this.state // 검색어를 읽어옴
 
@@ -60,7 +52,7 @@ class BoardList extends Component {
 
 	
     render() {
-		const {page, count, perPage, data } = this.state
+		const {page, count, perPage } = this.state
 		
 
         return (
@@ -77,14 +69,6 @@ class BoardList extends Component {
                             <th>작성일</th>
                         </tr>
                     </thead>
-					<tbody>
-						<td>{data.bno}</td>
-						<td>
-							<Link to={`/view.do/${data.bno}`}>{data.title}</Link>
-						</td>
-						<td>{data.writer}</td>
-						<td>{data.regdate}</td>
-					</tbody>
                 </Table>
                 <Table>
                     <Col md={2}>

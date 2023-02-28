@@ -54,7 +54,7 @@ class InputForm extends Component {
     } else if (crud === "Delete") {
       crudType = "/deleteProcess.do";
     } else if (crud === "Insert") {
-      crudType = "/insertProcess.do";
+      crudType = "  /insertProcess.do";
     } else if (crud === "View") {
       return null;
     }
@@ -71,7 +71,7 @@ class InputForm extends Component {
       .post(crudType, form)
       .then((res) => {
         alert("요청이 처리되었습니다");
-        this.props.history.push("/");
+        this.props.history.push("/BoardList");
       })
       .catch((err) => alert("error: " + err.response.data.msg));
   }
