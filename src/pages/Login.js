@@ -72,7 +72,7 @@ const Login = () =>  {
         <>
             <Container fluid="sm">
                 <Row>
-                    <Col md={{ span: 4, offset: 4 }}>
+                    <Col md={{ span: 4, offset: 4 }} id='login_div'>
                         <h1 className='login_txt'>로그인</h1>
                         <Form id='loginForm'>
                             <Form.Group className="mb-3">
