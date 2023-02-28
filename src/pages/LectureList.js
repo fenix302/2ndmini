@@ -41,7 +41,7 @@ const LectureList = () => {
                     </div>
                 </div>
                 <div className='popular-lecture'>
-                    <p className='popular-lecture-header'>인기 강좌 목록</p>
+                    <h3 className='popular-lecture-header'>인기 강좌 목록</h3>
                     <Carousel cols={4} rows={1} gap={20} breakpoint={767} loop>
                         <Carousel.Item>
                             <img width="100%" height="124%" src="https://picsum.photos/800/600?random=1" />
@@ -71,104 +71,49 @@ const LectureList = () => {
                     </div>
                 <div className='entire-lecture'>
                     <div className='main-lecture'>
-                        <p className='main-lecture-header'>대표 강좌 목록</p>
+                        <h3 className='main-lecture-header'>대표 강좌 목록</h3>
                         <ListGroup horizontal>
-                            <ListGroup.Item>This</ListGroup.Item>
-                            <ListGroup.Item>ListGroup</ListGroup.Item>
-                            <ListGroup.Item>renders</ListGroup.Item>
-                            <ListGroup.Item>horizontally!</ListGroup.Item>
+                            <ListGroup.Item className='lecture-list-item'><img width="100%" height="100%" src="https://picsum.photos/800/600?random=1" /></ListGroup.Item>
+                            <ListGroup.Item className='lecture-list-item'><img width="100%" height="100%" src="https://picsum.photos/800/600?random=1" /></ListGroup.Item>
+                            <ListGroup.Item className='lecture-list-item'><img width="100%" height="100%" src="https://picsum.photos/800/600?random=1" /></ListGroup.Item>
+                            <ListGroup.Item className='lecture-list-item'><img width="100%" height="100%" src="https://picsum.photos/800/600?random=1" /></ListGroup.Item>
                             </ListGroup>
                     </div>
                     <div className='best-lecture'>
-                        <p className='best-lecture-header'>베스트 강좌 목록</p>
-                        <Carousel cols={4} rows={1} gap={20} breakpoint={767} loop>
-                        <Carousel.Item>
-                            <img width="100%" height="124%" src="https://picsum.photos/800/600?random=1" />
-                        </Carousel.Item>
-                        <Carousel.Item>
-                            <img width="100%" height="124%" src="https://picsum.photos/800/600?random=2" />
-                        </Carousel.Item>
-                        <Carousel.Item>
-                            <img width="100%" height="124%" src="https://picsum.photos/800/600?random=3" />
-                        </Carousel.Item>
-                        <Carousel.Item>
-                        <img width="100%" height="124%" src="https://picsum.photos/800/600?random=1" />
-                        </Carousel.Item>
-                        <Carousel.Item>
-                        <img width="100%" height="124%" src="https://picsum.photos/800/600?random=1" />
-                        </Carousel.Item>
-                        <Carousel.Item>
-                        <img width="100%" height="124%" src="https://picsum.photos/800/600?random=1" />
-                        </Carousel.Item>
-                        <Carousel.Item>
-                        <img width="100%" height="124%" src="https://picsum.photos/800/600?random=1" />
-                        </Carousel.Item>
-                        <Carousel.Item>
-                        <img width="100%" height="124%" src="https://picsum.photos/800/600?random=1" />
-                        </Carousel.Item>
-                    </Carousel>
+                        <h3 className='best-lecture-header'>베스트 강좌 목록</h3>
+                        <ListGroup horizontal>
+                            <ListGroup.Item><img width="100%" height="100%" src="https://picsum.photos/800/600?random=1" /></ListGroup.Item>
+                            <ListGroup.Item><img width="100%" height="100%" src="https://picsum.photos/800/600?random=1" /></ListGroup.Item>
+                            <ListGroup.Item><img width="100%" height="100%" src="https://picsum.photos/800/600?random=1" /></ListGroup.Item>
+                            <ListGroup.Item><img width="100%" height="100%" src="https://picsum.photos/800/600?random=1" /></ListGroup.Item>
+                            </ListGroup>
                     </div>
                     <div className='recommend-lecture'>
                         <p className='recommend-lecture-header'>추천 강좌 목록</p>
-                        <Carousel cols={4} rows={1} gap={20} breakpoint={767} loop>
-                        <Carousel.Item>
-                            <img width="100%" height="124%" src="https://picsum.photos/800/600?random=1" />
-                        </Carousel.Item>
-                        <Carousel.Item>
-                            <img width="100%" height="124%" src="https://picsum.photos/800/600?random=2" />
-                        </Carousel.Item>
-                        <Carousel.Item>
-                            <img width="100%" height="124%" src="https://picsum.photos/800/600?random=3" />
-                        </Carousel.Item>
-                        <Carousel.Item>
-                        <img width="100%" height="124%" src="https://picsum.photos/800/600?random=1" />
-                        </Carousel.Item>
-                        <Carousel.Item>
-                        <img width="100%" height="124%" src="https://picsum.photos/800/600?random=1" />
-                        </Carousel.Item>
-                        <Carousel.Item>
-                        <img width="100%" height="124%" src="https://picsum.photos/800/600?random=1" />
-                        </Carousel.Item>
-                        <Carousel.Item>
-                        <img width="100%" height="124%" src="https://picsum.photos/800/600?random=1" />
-                        </Carousel.Item>
-                        <Carousel.Item>
-                        <img width="100%" height="124%" src="https://picsum.photos/800/600?random=1" />
-                        </Carousel.Item>
-                    </Carousel>
+                        <ListGroup horizontal>
+                            <ListGroup.Item><img width="100%" height="100%" src="https://picsum.photos/800/600?random=1" /></ListGroup.Item>
+                            <ListGroup.Item><img width="100%" height="100%" src="https://picsum.photos/800/600?random=1" /></ListGroup.Item>
+                            <ListGroup.Item><img width="100%" height="100%" src="https://picsum.photos/800/600?random=1" /></ListGroup.Item>
+                            <ListGroup.Item><img width="100%" height="100%" src="https://picsum.photos/800/600?random=1" /></ListGroup.Item>
+                            </ListGroup>
                     </div>
                     <div className='event-lecture'>
                     <p className='event-lecture-header'>이벤트 강좌 목록</p>
-                    <Carousel cols={4} rows={1} gap={20} breakpoint={767} loop>
-                        <Carousel.Item>
-                            <img width="100%" height="124%" src="https://picsum.photos/800/600?random=1" />
-                        </Carousel.Item>
-                        <Carousel.Item>
-                            <img width="100%" height="124%" src="https://picsum.photos/800/600?random=2" />
-                        </Carousel.Item>
-                        <Carousel.Item>
-                            <img width="100%" height="124%" src="https://picsum.photos/800/600?random=3" />
-                        </Carousel.Item>
-                        <Carousel.Item>
-                        <img width="100%" height="124%" src="https://picsum.photos/800/600?random=1" />
-                        </Carousel.Item>
-                        <Carousel.Item>
-                        <img width="100%" height="124%" src="https://picsum.photos/800/600?random=1" />
-                        </Carousel.Item>
-                        <Carousel.Item>
-                        <img width="100%" height="124%" src="https://picsum.photos/800/600?random=1" />
-                        </Carousel.Item>
-                        <Carousel.Item>
-                        <img width="100%" height="124%" src="https://picsum.photos/800/600?random=1" />
-                        </Carousel.Item>
-                        <Carousel.Item>
-                        <img width="100%" height="124%" src="https://picsum.photos/800/600?random=1" />
-                        </Carousel.Item>
-                    </Carousel>
+                    <ListGroup horizontal>
+                            <ListGroup.Item><img width="100%" height="100%" src="https://picsum.photos/800/600?random=1" /></ListGroup.Item>
+                            <ListGroup.Item><img width="100%" height="100%" src="https://picsum.photos/800/600?random=1" /></ListGroup.Item>
+                            <ListGroup.Item><img width="100%" height="100%" src="https://picsum.photos/800/600?random=1" /></ListGroup.Item>
+                            <ListGroup.Item><img width="100%" height="100%" src="https://picsum.photos/800/600?random=1" /></ListGroup.Item>
+                            </ListGroup>
                     </div>
                     <div className='price-down-lecture'>
                     <p className='-lecture-header'>할인 강좌 목록</p>
-                    
+                    <ListGroup horizontal>
+                            <ListGroup.Item><img width="100%" height="100%" src="https://picsum.photos/800/600?random=1" /></ListGroup.Item>
+                            <ListGroup.Item><img width="100%" height="100%" src="https://picsum.photos/800/600?random=1" /></ListGroup.Item>
+                            <ListGroup.Item><img width="100%" height="100%" src="https://picsum.photos/800/600?random=1" /></ListGroup.Item>
+                            <ListGroup.Item><img width="100%" height="100%" src="https://picsum.photos/800/600?random=1" /></ListGroup.Item>
+                            </ListGroup>
                     </div>
                 </div>
             </div>
