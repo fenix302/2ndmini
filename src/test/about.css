@@ -64,7 +64,7 @@
 .history-card{
     border-color: #ECEAE6 !important;
     height: 460px !important;
-
+    text-align: center;
 }
 
 .history-card-list{
