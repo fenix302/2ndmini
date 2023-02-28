@@ -63,11 +63,13 @@
 
 .history-card{
     border-color: #ECEAE6 !important;
+    height: 460px !important;
 
 }
 
 .history-card-list{
     background-color: #ECEAE6 !important;
+    height: 230px !important;
 }
 
 @media (min-width:1420px){
