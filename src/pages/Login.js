@@ -81,15 +81,15 @@ const Login = () =>  {
                 <Row className='login_row'>
                     <Col md={{ span: 4, offset: 4 }} id='login_div'>
                         <Form id='loginForm'>
-                            <Form.Group className="mb-3">
-                                <Input type="id" id="memberId" placeholder="아이디를 입력하세요" />
+                            <Form.Group className="form-group mb-4">
+                                <Input type="id" id="memberId form-control" placeholder="아이디를 입력하세요" />
                             </Form.Group>
 
-                            <Form.Group className="mb-3">
-                                <Input type="password" id="memberPw" placeholder="비밀번호를 입력하세요" />
+                            <Form.Group className="form-group mb-4">
+                                <Input type="password" id="memberPw form-control" placeholder="비밀번호를 입력하세요" />
                             </Form.Group>
                             
-                            <div className="d-grid gap-2 mb-3">
+                            <div className="form-group d-grid gap-2 mt-4">
                                 <Button variant="primary" size='lg' onClick={fn_signIn}>로그인</Button>
                             </div>
                         </Form>
