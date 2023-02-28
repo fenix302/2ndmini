@@ -1,10 +1,20 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Container, Row, Col, Table, Button } from "reactstrap";
+import axios from 'axios';
 import '../css/registration.css'
 
-const Registration = () => {
-    return(
-        <>
+
+function Registration(props){
+    let [dbdata, setDbdata] = useState(null);
+
+    useEffect(()=>{
+        axios.get("/selectLecture.do")
+        .then((res) =>{
+            setDbdata(res.data);
+        }, [])
+    })
+
+        return(
             <Container>
                 <div className="registLec">
                     <Row lg="2" xs="1">
@@ -135,9 +145,8 @@ const Registration = () => {
                     </Col>
                 </Row>
             </Container>
-
-        </>
-    )
-}
+        )
+    
+};
 
 export default Registration;
