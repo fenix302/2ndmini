@@ -70,10 +70,16 @@ const Login = () =>  {
 
     return (
         <>
+        <div class="page_header">
+            <div class="login_header">
+              <div class="name">
+                    <p class="comeText">로그인</p>
+               </div>
+             </div>
+          </div>
             <Container fluid="sm">
-                <Row>
+                <Row className='login_row'>
                     <Col md={{ span: 4, offset: 4 }} id='login_div'>
-                        <h1 className='login_txt'>로그인</h1>
                         <Form id='loginForm'>
                             <Form.Group className="mb-3">
                                 <Input type="id" id="memberId" placeholder="아이디를 입력하세요" />
