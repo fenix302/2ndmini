@@ -57,8 +57,8 @@
     float: left;
 }
 
-.history-img{
-    
+.history_img{
+    margin-bottom: 30px !important;
 }
 
 .history-card{
@@ -75,5 +75,11 @@
 @media (min-width:1420px){
     .history-img{
         width: 100%;
+    }
+}
+
+@media (max-width:660px) {
+    .card-text{
+        display: none;
     }
 }
