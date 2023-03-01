@@ -17,13 +17,14 @@
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('/public/img/office.jpg');
 }
 
-.fqa-parent {
+.faq-parent {
     display: flex;
     align-items: center;
     justify-content: center;
   }
-  .fqa_all {
+  .faq_all {
     margin-bottom: 50px;
+    cursor: pointer;
   }
   .faq-list {
     width: 70%;

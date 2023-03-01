@@ -114,7 +114,7 @@ const FAQ = () => {
       {/* <div>faq</div>  */}
       
       {/* 이부분이 현재 나오고 있는 글자  */}
-      <div className="fqa_all">
+      <div className="faq_all">
 
       <CategoryFilter
         categories={categories}
@@ -122,7 +122,7 @@ const FAQ = () => {
         setCatecory={setCatecory}
       />
       </div>
-      <div className="fqa-parent">
+      <div className="faq-parent">
         <div className="faq-list">
           {showList.map((item, index) => getQnACard(item, index))}     
         </div>
