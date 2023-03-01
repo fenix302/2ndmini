@@ -17,7 +17,7 @@ const Main = () => {
 
       {/* 본문 */}
       <div class="content">
-        <div class="best_group">
+        <div class="best_group ">
           {/* 컨텐츠 명 */}
           <div class="group_name">
             <p class="con_name">추천 강좌</p>
