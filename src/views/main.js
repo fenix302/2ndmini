@@ -17,7 +17,7 @@ const Main = () => {
 
       {/* 본문 */}
       <div class="content">
-        <div class="best_group">
+        <div class="best_group ">
           {/* 컨텐츠 명 */}
           <div class="group_name">
             <p class="con_name">추천 강좌</p>
@@ -82,7 +82,7 @@ const Main = () => {
       <div class="con">
         <div class="add">
           <div class="owl-carousel">
-              <div class="add_img"> <img src="img/add1.jpg" alt="add1"/> </div>  
+              <div class="add_img"> <img src="img/add1.jpg" alt="add1" /> </div>  
             </div>
         </div>
       </div>
