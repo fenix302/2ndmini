@@ -1,5 +1,5 @@
 import axios from "axios";
-import React from "react";
+import React,{useEffect} from "react";
 import { Container, Row, Col, Table, Button } from "reactstrap";
 import '../css/registration.css'
 
