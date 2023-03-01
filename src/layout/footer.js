@@ -6,7 +6,7 @@ const Footer = () => {
     return(
         <footer>
             <Container fluid="sm">
-                <div className="contents">
+                <div className="contents content_login">
                     <div className="first">
                         <p className="h1">구로 문화센터</p>
                         <p className="h4">
