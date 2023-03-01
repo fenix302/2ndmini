@@ -19,7 +19,9 @@ const about = () => {
 					<p className="comeText">회사소개</p>
 				</div>
 			</div>
-        </div>        
+        </div>       
+
+         {/* 본문 */}
         </>
     );
 }

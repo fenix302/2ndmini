@@ -22,7 +22,7 @@
     align-items: center;
     justify-content: center;
     padding-bottom: 140px !important;
-    padding-top: 50px !important;
+    margin-top: 50px !important;
 
   }
   .faq_all {
@@ -90,7 +90,7 @@
     margin-top: 3px;
     border: 1px solid #46433D;
     border-radius: 5px;
-    margin-bottom: 50px;
+    margin-bottom: 50px !important;
     width: 70%;
     text-align:center !important;
     margin:0 auto !important; 
@@ -131,4 +131,3 @@
     background: #46433D ;
     color: #fff;
   }
-

@@ -107,7 +107,7 @@ const FAQ = () => {
 
   <div className="about_FAQ">
   <div className="name">
-    <p className="about-header-text">FAQ</p>
+  <p className="comeText">FAQ</p>
   </div>
   </div>
 
