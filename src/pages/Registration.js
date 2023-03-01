@@ -32,8 +32,7 @@ function Registration(props){
                             </p>
                         </Col>
                         <Col lg="2">
-                            <Button color="success">장바구니</Button>{' '}
-                            <Button color="danger">신청하기</Button>
+                            <Button size="lg" color="primary" type="submit" value="Submit">신청하기</Button>
                         </Col>
                     </Row>
                 </div>
