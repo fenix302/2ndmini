@@ -1,6 +1,6 @@
 import { Route, Switch } from "react-router-dom";
 import InputForm from "./views/InputForm";
-import ViewButton from "./views/ViewButton";
+import Main from "./views/main";
 import Header from "./layout/header";
 import Footer from "./layout/footer";
 import about from "./test/about";
@@ -29,7 +29,7 @@ function App(){
           <Route exact path="/location" component={Kakaomap} />
           <Route exact path="/Faq" component={Faq} />
           <Route exact path="/:crud" component={InputForm} />
-          <Route exact path="/" component={ViewButton} />
+          <Route exact path="/" component={Main} />
           
         </Switch>
     

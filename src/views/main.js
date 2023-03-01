@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { Button } from 'react-bootstrap';
 import '../css/main.css'
 
-const ViewButton = () => {
+const Main = () => {
   return (
     <>
     {/* 배너 */}
@@ -107,4 +107,4 @@ const ViewButton = () => {
   );
 };
 
-export default ViewButton;
+export default Main;
