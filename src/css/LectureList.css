@@ -144,6 +144,8 @@
 
   .popular-lecture{
    margin: 0 auto !important;
+   height: 335px;
+
   }
 
   .popular-lecture-header{
@@ -155,7 +157,7 @@
 }
 
 .qFTwe{
-   overflow: hidden;
+   overflow: visible;
 }
 
 }
