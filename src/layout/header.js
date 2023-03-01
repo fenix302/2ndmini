@@ -70,6 +70,11 @@ const Header = () => {
                                         <a class="dropdown-item" href="#">FAQ</a>
                                     </Link>
                                 </li>
+                                <li>
+                                    <Link to="/Promote">
+                                        <a class="dropdown-item" href="#">회사홍보</a>
+                                    </Link>
+                                </li>
                             </ul>
                         </li>
 
