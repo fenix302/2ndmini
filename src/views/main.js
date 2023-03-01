@@ -20,53 +20,60 @@ const Main = () => {
         <div class="best_group">
           {/* 컨텐츠 명 */}
           <div class="group_name">
-            <p class="con_name">BEST</p>
+            <p class="con_name">추천 강좌</p>
           </div>
 
           <div class="inner_group">
             {/* 컨텐츠1 */}
-            <div class="item1">
-	            <div class="img">
-	              <a><img src="img/item1.jpg" /></a>
-	            </div>
-              <div class="item">
-                <a><p class="item_name">3chain drop earring</p></a>
-                <p class="item_ann">각기 다른 세가지 체인이 믹스되어 찰랑거리며 반짝이는 것이 포인트인 드롭 귀걸이</p>
+            <Link to="/LectureList">
+              <div class="item1">
+                <div class="img">
+                    <a><img src="img/guitar.jpg" /></a>
+                </div>
+                <div class="item">
+                  <a><p class="item_name">[11주] 서인철 통기타교실[계속]</p></a>
+                  <p class="item_ann">서인철 통기타 교실</p>
+                </div>
               </div>
-            </div>
+            </Link>
 
             {/* 컨텐츠2 */}
-            <div class="item2">
-	            <div class="img">
-	              <a><img src="img/item1.jpg" /></a>
-	            </div>
-              <div class="item">
-                <a><p class="item_name">3chain drop earring</p></a>
-                <p class="item_ann">각기 다른 세가지 체인이 믹스되어 찰랑거리며 반짝이는 것이 포인트인 드롭 귀걸이</p>
+            <Link to="/LectureList">  
+              <div class="item2">
+                <div class="img">
+                  <a><img src="img/kids.png" /></a>
+                </div>
+                <div class="item">
+                  <a><p class="item_name">[신규]BK 키즈 스포츠 플레이데이 [30~48개월]</p></a>
+                </div>
               </div>
-            </div>
+            </Link>
 
             {/* 컨텐츠3 */}
-            <div class="item4">
-	            <div class="img">
-	              <a><img src="img/item1.jpg" /></a>
-	            </div>
-              <div class="item">
-                <a><p class="item_name">3chain drop earring</p></a>
-                <p class="item_ann">각기 다른 세가지 체인이 믹스되어 찰랑거리며 반짝이는 것이 포인트인 드롭 귀걸이</p>
+            <Link to="/LectureList">
+              <div class="item4">
+                <div class="img">
+                  <a><img src="img/calligraphy.jpg" /></a>
+                </div>
+                <div class="item">
+                  <a><p class="item_name">붓으로 쓰는 멋스런 캘리그라피(금)</p></a>
+                  <p class="item_ann">아름다운 손글씨란 뜻으로 다양한 도구와 재료를 사용하여 자신이 담고자 하는 마음을 자유롭고 독창적으로 표현하는 글씨 예술입니다.</p>
+                </div>
               </div>
-            </div>
+            </Link>
 
             {/* 컨텐츠4 */}
-            <div class="item4">
-	            <div class="img">
-	              <a><img src="img/item1.jpg" /></a>
-	            </div>
-              <div class="item">
-                <a><p class="item_name">3chain drop earring</p></a>
-                <p class="item_ann">각기 다른 세가지 체인이 믹스되어 찰랑거리며 반짝이는 것이 포인트인 드롭 귀걸이</p>
-              </div>
-            </div>                    
+            <Link to="/LectureList">
+              <div class="item4">
+                <div class="img">
+                  <a><img src="img/yoga.jpg" /></a>
+                </div>
+                <div class="item">
+                  <a><p class="item_name">다이어트 요가</p></a>
+                  <p class="item_ann">내 몸을 위한 릴렉스 타임! 건강 & 뷰티 클래스</p>
+                </div>
+              </div>                    
+            </Link>
           </div>
         </div>
       </div>
