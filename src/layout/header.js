@@ -66,15 +66,16 @@ const Header = () => {
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link to="/faq">
-                                        <a class="dropdown-item" href="#">FAQ</a>
+                                    <Link to="/Promote">
+                                        <a class="dropdown-item">홍보영상</a>
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link to="/Promote">
-                                        <a class="dropdown-item" href="#">회사홍보</a>
+                                    <Link to="/faq">
+                                        <a class="dropdown-item">FAQ</a>
                                     </Link>
                                 </li>
+
                             </ul>
                         </li>
 
