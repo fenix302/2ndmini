@@ -1,6 +1,6 @@
 import axios from "axios";
 import React,{useEffect} from "react";
-import { Container, Row, Col, Table, Button } from "reactstrap";
+import { Container, Row, Col, Table, Button, Form, FormGroup, Label, Input } from "reactstrap";
 import '../css/registration.css'
 
 function Registration(props){
@@ -152,6 +152,67 @@ function Registration(props){
                         </div>
                     </Col>
                 </Row>
+                <br /><br />
+                <h1>구로 문화센터 강의 신청서 작성</h1>
+                <br />
+                <br />
+                <Form>
+                    <Row>
+                        <Col md={6}>
+                        <FormGroup>
+                            <Label for="name">
+                            이름
+                            </Label>
+                            <Input
+                            id="name"
+                            name="name"
+                            placeholder="이름을 입력해 주세요"
+                            type="name"
+                            formMethod="post"
+                            />
+                        </FormGroup>
+                        </Col>
+                        <Col md={6}>
+                        <FormGroup>
+                            <Label for="email">
+                            이메일
+                            </Label>
+                            <Input
+                            id="email"
+                            name="email"
+                            placeholder="이메일을 입력해 주세요"
+                            type="email"
+                            formMethod="post"
+                            />
+                        </FormGroup>
+                        </Col>
+                        <FormGroup>
+                            <Label for="address">
+                            주소
+                            </Label>
+                            <Input
+                            id="address"
+                            name="address"
+                            placeholder="주소를 입력해 주세요"
+                            formMethod="post"
+                            />
+                        </FormGroup>
+                        <FormGroup>
+                            <Label for="tel">
+                            전화번호
+                            </Label>
+                            <Input
+                            id="tel"
+                            name="tel"
+                            placeholder="전화번호를 입력해 주세요"
+                            formMethod="post"
+                            type="number"
+                            />
+                        </FormGroup>
+                    </Row>
+                </Form>
+                <br />
+                <br />
             </Container>
 
         </>
