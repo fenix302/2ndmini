@@ -17,10 +17,8 @@ const Header = () => {
         
          useEffect(() => {
            if(sessionStorage.getItem('member_id') === null){
-           // sessionStorage 에 user_id 라는 key 값으로 저장된 값이 없다면
              console.log('isLogin ?? :: ', isLogin)
            } else {
-           // sessionStorage 에 user_id 라는 key 값으로 저장된 값이 있다면
            // 로그인 상태 변경
              setIsLogin(true)
              console.log('isLogin ?? :: ', isLogin)
@@ -29,7 +27,7 @@ const Header = () => {
         
          const onLogout = () => {
             alert("로그아웃 되셨습니다.");
-            // sessionStorage 에 user_id 로 저장되어있는 아이템을 삭제한다.
+            // sessionStorage에 저장되어있는 아이템을 삭제한다.
             sessionStorage.removeItem('member_id')
             sessionStorage.removeItem('name')
 
