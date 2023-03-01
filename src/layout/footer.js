@@ -6,8 +6,8 @@ const Footer = () => {
     return(
         <footer>
             <Container fluid="sm">
-                <div className="con">
-                    <div className="first">
+                <div className="con_footer">
+                    <div className="first_footer">
                         <p className="h1">구로 문화센터</p>
                         <p className="h4">
                         대표자 | 홍길동 <br/>
@@ -17,7 +17,7 @@ const Footer = () => {
                         통신판매업신고 | 제2021-서울구로-1933호
                         </p>
                     </div>
-                    <div className='seceond'>
+                    <div className='seceond_footer'>
                         <div className='sns_logo'>
                             <a href='#'><img src='/img/044-instagram.svg'></img></a>
                             <a href='#'><img src='/img/095-twitter.svg'></img></a>

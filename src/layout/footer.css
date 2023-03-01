@@ -35,7 +35,7 @@ footer{
     height: 45px;
 }
 
-.first{
+.first_footer{
     padding: 16px 16px 0px 16px;
     float: left;
 }
@@ -55,14 +55,14 @@ footer{
     margin-bottom: 10px !important;
 }
 
-.con {
+.con_footer {
     max-width: 1440px;
     margin: 0 auto;
     padding-top: 20px;
 }
 
 /*  SNS로고 */
-.seceond{
+.seceond_footer{
     float: right !important;
     width: 35% !important;
     padding-top: 10px !important;
@@ -77,11 +77,11 @@ footer{
 
 @media (min-width: 1440px) {
 
-    .first{
+    .first_footer{
         padding: 0px !important;
     }
 
-    .con{
+    .con_footer{
         padding-top: 36px;
     }
   }
