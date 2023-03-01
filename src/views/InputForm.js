@@ -110,7 +110,7 @@ class InputForm extends Component {
       <>
         <div className="board_header">
           <div className="name">
-            <p className="about-header-text">새 글쓰기</p>
+            <p className="about-header-text">{this.createHeaderName()}</p>
           </div>
         </div>      
         <Container>
