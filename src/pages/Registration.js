@@ -1,33 +1,10 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { Container, Row, Col, Table, Button } from "reactstrap";
-import axios from 'axios';
 import '../css/registration.css'
 
-
-function Registration(props){
-
-    // let [dbdata, setDbdata] = useState(null);
-
-    useEffect(()=>{
-        axios.get("/selectLecture.do")
-        .then((res) =>{
-            // setDbdata(res.data);
-            console.log(res.data.teacher);
-            sessionStorage.setItem("teacher", res.data.teacher);
-            sessionStorage.setItem("lectureType", res.data.lectureType);
-            sessionStorage.setItem("lectureRoom", res.data.lectureRoom);
-            sessionStorage.setItem("studentNum", res.data.studentNum);
-            sessionStorage.setItem("lecturePrice", res.data.lecturePrice);
-        }, [])
-        .catch()
-    })
-    const teacher = sessionStorage.teacher;
-    const lectureType = sessionStorage.lectureType;
-    const lectureRoom = sessionStorage.lectureRoom;
-    const studentNum = sessionStorage.studentNum;
-    const lecturePrice = sessionStorage.lecturePrice;
-    
-        return(
+const Registration = () => {
+    return(
+        <>
             <Container>
                 <div className="registLec">
                     <Row lg="2" xs="1">
@@ -91,7 +68,7 @@ function Registration(props){
                                                     강좌구분
                                                 </th>
                                                 <td>
-                                                    {lectureType}
+                                                    특강
                                                 </td>
                                             </tr>
                                             <tr>
@@ -107,7 +84,7 @@ function Registration(props){
                                                     강사명
                                                 </th>
                                                 <td>
-                                                    {teacher}
+                                                    홍길동
                                                 </td>
                                             </tr>
                                             <tr>
@@ -131,7 +108,7 @@ function Registration(props){
                                                     강의실
                                                 </th>
                                                 <td>
-                                                    {lectureRoom}호
+                                                    103호
                                                 </td>
                                             </tr>
                                             <tr>
@@ -139,7 +116,7 @@ function Registration(props){
                                                     수강인원
                                                 </th>
                                                 <td>
-                                                    {studentNum}명
+                                                    10명
                                                 </td>
                                             </tr>
                                             <tr>
@@ -147,7 +124,7 @@ function Registration(props){
                                                     수강료
                                                 </th>
                                                 <td>
-                                                    {lecturePrice}원
+                                                    20,000원
                                                 </td>
                                             </tr>
                                         </tbody>
@@ -158,8 +135,9 @@ function Registration(props){
                     </Col>
                 </Row>
             </Container>
-        )
-    
-};
+
+        </>
+    )
+}
 
 export default Registration;
