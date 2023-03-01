@@ -91,6 +91,7 @@ const Login = () =>  {
                             
                             <div className="form-group d-grid gap-2 mt-4">
                                 <Button variant="primary" size='lg' onClick={fn_signIn}>로그인</Button>
+                                <Button variant="secondary" size='lg' >회원가입</Button>
                             </div>
                         </Form>
                     </Col>
