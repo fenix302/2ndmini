@@ -56,6 +56,14 @@ class BoardList extends Component {
 		
 
         return (
+			<>
+			<div className="page_header">
+				<div className="board_header">
+					<div className="name">
+						<p className="comeText">자유게시판</p>
+					</div>
+				</div>
+          	</div>
 			<Container>
                 <Link to='/Insert'>
                     <Button className='write btn-secondary btn-dark text-white'>새 글쓰기</Button>
@@ -95,7 +103,7 @@ class BoardList extends Component {
 						prevPageText='이전'
 						/>
 			</Container>
-            
+			</> 
         );
     }
 }
