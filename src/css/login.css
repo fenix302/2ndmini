@@ -4,13 +4,11 @@
  *{
   list-style: none;
   text-decoration: none !important;
+  margin: 0 auto;
 }
 
 p{
   margin: 0 !important;
-}
-div{
-  margin: 0px !important;
 }
 
 Button > a{
