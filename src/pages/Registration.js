@@ -1,8 +1,26 @@
+import axios from "axios";
 import React from "react";
 import { Container, Row, Col, Table, Button } from "reactstrap";
 import '../css/registration.css'
 
-const Registration = () => {
+function Registration(props){
+    useEffect(()=>{
+        axios.get("/selectLecture.do")
+        .then((res) =>{
+            console.log(res.data.teacher);
+            sessionStorage.setItem("teacher", res.data.teacher);
+            sessionStorage.setItem("lectureType", res.data.lectureType);
+            sessionStorage.setItem("lectureRoom", res.data.lectureRoom);
+            sessionStorage.setItem("studentNum", res.data.studentNum);
+            sessionStorage.setItem("lecturePrice", res.data.lecturePrice);
+        }, [])
+        .catch()
+    })
+    const teacher = sessionStorage.teacher;
+    const lectureType = sessionStorage.lectureType;
+    const lectureRoom = sessionStorage.lectureRoom;
+    const studentNum = sessionStorage.studentNum;
+    const lecturePrice = sessionStorage.lecturePrice;
     return(
         <>
             <Container>
@@ -68,7 +86,7 @@ const Registration = () => {
                                                     강좌구분
                                                 </th>
                                                 <td>
-                                                    특강
+                                                    {lectureType}
                                                 </td>
                                             </tr>
                                             <tr>
@@ -84,7 +102,7 @@ const Registration = () => {
                                                     강사명
                                                 </th>
                                                 <td>
-                                                    홍길동
+                                                    {teacher}
                                                 </td>
                                             </tr>
                                             <tr>
@@ -108,7 +126,7 @@ const Registration = () => {
                                                     강의실
                                                 </th>
                                                 <td>
-                                                    103호
+                                                    {lectureRoom}호
                                                 </td>
                                             </tr>
                                             <tr>
@@ -116,7 +134,7 @@ const Registration = () => {
                                                     수강인원
                                                 </th>
                                                 <td>
-                                                    10명
+                                                    {studentNum}명
                                                 </td>
                                             </tr>
                                             <tr>
@@ -124,7 +142,7 @@ const Registration = () => {
                                                     수강료
                                                 </th>
                                                 <td>
-                                                    20,000원
+                                                    {lecturePrice}원
                                                 </td>
                                             </tr>
                                         </tbody>
