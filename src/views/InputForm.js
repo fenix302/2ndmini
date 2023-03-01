@@ -11,6 +11,7 @@ class InputForm extends Component {
       title: "",
       content: "",
       writer: "",
+      regdate: "",
       crud: props.match.params.crud,
     };
     if (this.state.crud !== "Insert") {
@@ -33,6 +34,7 @@ class InputForm extends Component {
 
   createCrudBtn() {
     const crud = this.state.crud;
+    console.log(crud);
     if (crud === "View") {
       return null;
     } else {
@@ -84,6 +86,7 @@ class InputForm extends Component {
         title: data.title,
         writer: data.writer,
         content: data.content,
+        regdate: data.regdate
       });
     });
   }
@@ -105,15 +108,8 @@ class InputForm extends Component {
 
     return (
       <>
-        <div className="page_header">
-          <div className="board_header">
-            <div className="name">
-              <p className="comeText">새 글쓰기</p>
-            </div>
-          </div>
-        </div>     
         <Container>
-          {/* <h1 className="header"> {this.createHeaderName()}</h1> */}
+          <h1 className="header"> {this.createHeaderName()}</h1>
           {this.createBnoTag()}
           <h3 className="header1">
           <font color="red">*&nbsp;</font>
@@ -159,8 +155,8 @@ class InputForm extends Component {
           ></textarea>
           <br /> <br />
           {this.createCrudBtn()}
-          <Link to="/">
-            <button className="btn2 btn-danger" type="button">취소</button>
+          <Link to="/BoardList">
+            <button className="btn2 btn-danger" type="button">돌아가기</button>
           </Link>
         </Container>  
       </>

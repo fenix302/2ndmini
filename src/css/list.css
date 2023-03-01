@@ -5,3 +5,13 @@
 .write{
     float: right;
 }
+
+Table > thead > tr > th{
+    text-align: center !important;
+    line-height: 40px;
+}
+
+Table > tbody > td{
+    text-align: center !important;
+    line-height: 50px;
+}
