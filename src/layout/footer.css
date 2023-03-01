@@ -18,8 +18,8 @@ footer{
 }
 
 .contents{
-    max-width: 500px;
-    margin: 0 auto;
+    max-width: 1440px;
+    margin: 0 auto !important;
     padding-top: 34px;
     float: left;
 }

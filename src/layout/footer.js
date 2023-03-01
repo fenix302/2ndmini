@@ -17,11 +17,11 @@ const Footer = () => {
                         통신판매업신고 | 제2021-서울구로-1933호
                         </p>
                     </div>
-                </div>
-                <div className='contents_img'>
-                    <a href='#'><img src='/img/sns-facebook.png'></img></a>
-                    <a href='#'><img src='/img/sns-instagram.png'></img></a>
-                    <a href='#'><img src='/img/sns_ytb2.png'></img></a>
+                    <div className='contents_img'>
+                        <a href='#'><img src='/img/sns-facebook.png'></img></a>
+                        <a href='#'><img src='/img/sns-instagram.png'></img></a>
+                        <a href='#'><img src='/img/sns_ytb2.png'></img></a>
+                    </div>
                 </div>
             </Container>
         </footer>
