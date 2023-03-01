@@ -25,7 +25,7 @@ const about = () => {
                     <img src='/about.jpg' alt='about 이미지' className='img-fluid' />
                 </div>
                 <div  className='history'>
-                <Container className='container'>
+                <div className='container_about'>
                 <Row>
                     <Col>
                     <Card className='history-card'>
@@ -58,7 +58,7 @@ const about = () => {
                     </Card>
                     </Col>
                     </Row>
-                </Container>
+                </div>
                     </div>
                 </div>
                 
