@@ -12,6 +12,14 @@ import Image from 'react-bootstrap/Image'
 const about = () => {
     return(
         <>
+        {/* 페이지 헤더 */}
+		<div className="page_header">
+			<div className="company_header">
+				<div className="name">
+					<p className="comeText">회사소개</p>
+				</div>
+			</div>
+        </div>        
         </>
     );
 }
