@@ -11,7 +11,7 @@
  }
 
 .LectureList{
-   height: 300vh;
+   height: 290vh;
 }
 
 .LectureList-header{
@@ -24,25 +24,28 @@
        url('/public/about_header_image.jpg');
  }
 
+.popular{
+   background-color: aliceblue;
+}
+
 .popular-lecture{
    width: 90% !important;
    height: 470px;
    position: relative;
-   background-color: antiquewhite;
    margin: 100px auto !important;
 }
 
 .entire-lecture{
    width: 100%;
    height: 140vh;
+   background-color: #fff;
 }
 
 .main-lecture, .best-lecture, .recommend-lecture{
    width: 90% !important;
    height: 470px;
-   margin: 0 auto !important;
    position: relative;
-   margin: 100px auto !important;
+   margin: 50px auto !important;
 }
 
 .entire-lecture .bhRnqO{
@@ -69,25 +72,92 @@
    height: 70%;
 }
 
-.bghjHX{
-   /* 인기 강좌 4개 아이템과 양 옆 마진을 포함한 값의 높이를 조절합니다. */
-   height: 100% !important;
-}
-
-.bVoXXg{
-/* 인기강좌 캐러셀의 이미지를 담은 아이템의 길이를 조절합니다. */
-   height: 120%;
-}
 
 @media screen and (max-width: 767px){
+/* 인기강좌 반응형 크기 조절 */
 .hLycdF {
-    grid-template-columns: repeat(2,50%) !important;
+    grid-template-columns: repeat(4,25%) !important;
     padding-left: 0 !important;
+}
+
+
+.popular-lecture .hLycdF{
+   grid-template-columns: repeat(2, 90%) !important;
 }
 }
 
-@media (min-width:1024px) {
-   
+
+@media (min-width:1024px){
+   .popular-lecture{
+        margin: 0 auto !important;
+   }
+   .LectureList{
+      height: 250vh;
+   }
+   .popular-lecture-header{
+      padding-top: 50px;
+   }
+
+   .popular-lecture .bWFaMA{
+      grid-template-columns: repeat(4,1fr);
+   }
+
+
+   .bhRnqO{
+      top: calc(40% - 17.5px) !important;
+   }
+ 
+   .kVtMtA{
+      top: calc(40% - 17.5px) !important;
+   }
+}
+
+@media (max-width:464px){
+   .bhRnqO{
+      display: none;
+   }
+}
+
+@media (max-width:1024px) and (min-width:464px) {
+   .bWFaMA{
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: 1fr;
+   }
+   .bhRnqO{
+      display: none;
+   }
+   .kVtMtA{
+      display: none;
+   }
+   .bghjHX{
+      height: 100% !important;
+
+   }
+
+   .main-lecture, .best-lecture, .recommend-lecture {
+      margin: 0 auto !important;
+   }
+
+  .entire-lecture .bghjHX {
+   overflow: visible;
+  }
+
+  .popular-lecture{
+   margin: 0 auto !important;
+  }
+
+  .popular-lecture-header{
+   padding-top: 40px;
+}
+.popular{
+   margin-bottom: 50px !important;
+   padding-bottom: 50px !important;
+}
+
+.qFTwe{
+   overflow: hidden;
+}
+
 }
 
 div.list-group-item{

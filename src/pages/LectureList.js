@@ -40,6 +40,7 @@ const LectureList = () => {
                             <p className="LectureList-header-text">강좌 목록</p>
                     </div>
                 </div>
+                <div className='popular'>
                 <div className='popular-lecture'>
                     <h3 className='popular-lecture-header'>인기 강좌 목록</h3>
                     <Carousel cols={4} rows={1} gap={20} breakpoint={767} loop>
@@ -68,6 +69,7 @@ const LectureList = () => {
                         <img width="100%" height="124%" src="https://picsum.photos/800/600?random=1" />
                         </Carousel.Item>
                     </Carousel>
+                    </div>
                     </div>
                 <div className='entire-lecture'>
                     <div className='main-lecture'>
@@ -105,7 +107,7 @@ const LectureList = () => {
                     </Carousel>
                     </div>
                     <div className='recommend-lecture'>
-                        <p className='recommend-lecture-header'>추천 강좌 목록</p>
+                        <h3 className='recommend-lecture-header'>추천 강좌 목록</h3>
                         <Carousel cols={4} rows={1} gap={20} breakpoint={767} loop>
                         <Carousel.Item>
                             <img width="100%" height="124%" src="https://picsum.photos/800/600?random=1" />
