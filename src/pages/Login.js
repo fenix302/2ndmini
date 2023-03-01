@@ -54,8 +54,8 @@ const Login = () =>  {
 
           if(res.data != "N"){
             alert(res.data + "회원님, 환영합니다");
-            sessionStorage.setItem("member_id", memberId); // sessionStorage에 id를 user_id라는 key 값으로 저장
-            sessionStorage.setItem("name", res.data); // sessionStorage에 id를 user_id라는 key 값으로 저장
+            sessionStorage.setItem("member_id", memberId); // sessionStorage에 id 저장
+            sessionStorage.setItem("name", res.data); // sessionStorage에 name 저장
             document.location.href="/"
           }else{
             alert("회원정보 가입을 해주세요");
