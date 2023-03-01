@@ -92,7 +92,7 @@ const Header = () => {
                                         <a class="dropdown-item">자유게시판</a>
                                     </Link>
                                 </li>
-                                <li><a class="dropdown-item" href="${context}/work/consulting/retrieveBoardList.do">상담신청게시판</a></li>
+                                <li><a class="dropdown-item" href="#">상담신청게시판</a></li>
                             </ul>
                         </li>  
 
