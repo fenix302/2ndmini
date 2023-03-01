@@ -4,12 +4,21 @@
  *{
   list-style: none;
   text-decoration: none !important;
-  margin: 0 auto;
 }
 
 p,div{
   margin: 0 !important;
 }
+
+.container-sm{
+  max-width: 1440px !important;
+  margin: 0 auto !important;
+}
+
+#login_div{
+  margin: 0 auto !important; 
+}
+
 
 Button > a{
   color: #fff;
@@ -84,7 +93,7 @@ body {
 	width: 100%
 }
 
-.idFind_header, .pwFind_header, .login_header, .userC_header{
+.login_header{
    max-width: 100%;
    height: 300px;
    background-size: cover;
