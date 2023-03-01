@@ -63,6 +63,7 @@
 .img{
     max-width: 345px;
     max-height: 345px;
+    overflow: hidden;
 }
 
 .img>a>img{
@@ -113,4 +114,13 @@
     .content{
         padding: 0px !important;
     }
+}
+
+/* 추천강좌 이미지 호버 */
+.img > a > img {
+        transition: all 0.2s linear;
+}
+
+.img > a:hover > img {
+    transform: scale(1.2);
 }
