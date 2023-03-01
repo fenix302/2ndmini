@@ -63,7 +63,7 @@
    margin-inline-end: 0px;
    font-weight: bold;
    color: #fff;
-   background-color: black;
+   background-color: #46433D;
 }
 
 .comeText {
@@ -113,7 +113,7 @@
    line-height: 1.7;
    color: #333333;
    padding-left: 30px;
-   margin: 10px 0px 30px 0px;
+   margin: 10px 0px 30px 0px !important;
 }
 
 .announce2 > thin {
