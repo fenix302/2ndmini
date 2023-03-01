@@ -105,8 +105,15 @@ class InputForm extends Component {
 
     return (
       <>
+        <div className="page_header">
+          <div className="board_header">
+            <div className="name">
+              <p className="comeText">새 글쓰기</p>
+            </div>
+          </div>
+        </div>     
         <Container>
-          <h1 className="header"> {this.createHeaderName()}</h1>
+          {/* <h1 className="header"> {this.createHeaderName()}</h1> */}
           {this.createBnoTag()}
           <h3 className="header1">
           <font color="red">*&nbsp;</font>
