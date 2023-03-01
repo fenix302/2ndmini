@@ -18,7 +18,7 @@ footer{
 }
 
 .contents{
-    max-width: 1440px;
+    max-width: 1440px !important;
     margin: 0 auto !important;
     padding-top: 34px;
     float: left;
@@ -36,8 +36,8 @@ footer{
 }
 
 .first{
-    padding: 0px 16px 0px 16px !important;
-    padding-bottom: 30px !important;
+    padding: 16px 16px 0px 16px;
+    float: left;
 }
 
 .h1{
@@ -55,6 +55,24 @@ footer{
     margin-bottom: 10px !important;
 }
 
+.con {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding-top: 20px;
+}
+
+/*  SNS로고 */
+.seceond{
+    float: right !important;
+    width: 35% !important;
+    padding-top: 10px !important;
+}
+    
+.sns_logo>a>img {
+        width: 20px !important;
+        margin-left: 20px !important;
+        float: right !important; 
+}
 
 
 @media (min-width: 1440px) {
@@ -63,7 +81,7 @@ footer{
         padding: 0px !important;
     }
 
-    .contents{
+    .con{
         padding-top: 36px;
     }
   }

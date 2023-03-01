@@ -6,7 +6,7 @@ const Footer = () => {
     return(
         <footer>
             <Container fluid="sm">
-                <div className="contents content_login">
+                <div className="con">
                     <div className="first">
                         <p className="h1">구로 문화센터</p>
                         <p className="h4">
@@ -17,10 +17,12 @@ const Footer = () => {
                         통신판매업신고 | 제2021-서울구로-1933호
                         </p>
                     </div>
-                    <div className='contents_img'>
-                        <a href='#'><img src='/img/sns-facebook.png'></img></a>
-                        <a href='#'><img src='/img/sns-instagram.png'></img></a>
-                        <a href='#'><img src='/img/sns_ytb2.png'></img></a>
+                    <div className='seceond'>
+                        <div className='sns_logo'>
+                            <a href='#'><img src='/img/044-instagram.svg'></img></a>
+                            <a href='#'><img src='/img/095-twitter.svg'></img></a>
+                            <a href='#'><img src='/img/023-facebook.svg'></img></a>
+                        </div>
                     </div>
                 </div>
             </Container>
