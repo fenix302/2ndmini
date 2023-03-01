@@ -25,7 +25,14 @@ footer{
 }
 .contents_img{
     float: right;
-    margin-top: 100px;
+    margin-top: 130px;
+}
+.contents_img > a {
+    padding: 5px;
+}
+.contents_img > a > img{
+    width: 45px;
+    height: 45px;
 }
 
 .first{
@@ -61,3 +68,8 @@ footer{
     }
   }
   
+@media (max-width:460px) {
+    .contents_img{
+        display: none;
+    }
+}
