@@ -82,7 +82,7 @@ const Main = () => {
       <div class="con">
         <div class="add">
           <div class="owl-carousel">
-              <div class="add_img"> <img src="img/add1.jpg" alt="add1"/> </div>  
+              <div class="add_img"> <a href="https://www.saengong.com/" target={"_blank"}><img src="img/add1.jpg" alt="add1"/></a> </div>  
             </div>
         </div>
       </div>
