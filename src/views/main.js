@@ -89,7 +89,7 @@ const Main = () => {
 
 
         
-      {/* 버튼 */}
+      {/* 버튼 삭제예정입니다~
         <Link to="/BoardList">
           <Button variant="outline-secondary" size='lg'>게시판 리스트</Button>
         </Link>
@@ -108,7 +108,7 @@ const Main = () => {
         </Link>
         <Link to="/Faq">
           <Button variant="outline-secondary" size='lg'>Faq</Button>
-        </Link>
+        </Link> */}
 
     </>
   );
