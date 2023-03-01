@@ -1,5 +1,13 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 
-<iframe width="1000" height="562.5" src="
-https://youtu.be/_IhSd23aH0A" title="홍보영상" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-</iframe>
+const Promote =() =>{
+    
+    return(
+        
+        <iframe width="100%" height="700" src="https://www.youtube.com/embed/8LmaDGDlzeM?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+
+    );
+};
+
+export default Promote;

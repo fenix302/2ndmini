@@ -29,7 +29,7 @@ function App(){
           <Route exact path="/registration" component={Registration} />
           <Route exact path="/location" component={Kakaomap} />
           <Route exact path="/Faq" component={Faq} />
-          {/* <Route exact path="/Promote" component={Promote} /> */}
+          <Route exact path="/Promote" component={Promote} />
           <Route exact path="/:crud" component={InputForm} />
           <Route exact path="/" component={Main} />
           
