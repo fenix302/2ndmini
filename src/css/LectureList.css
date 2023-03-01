@@ -23,8 +23,8 @@
 .popular-lecture{
    width: 90% !important;
    height: 470px;
-   margin-left: auto;
-   margin-right: auto;
+   margin-left: auto !important;
+   margin-right: auto !important;
    margin-bottom: 100px !important;
    position: relative;
    background-color: antiquewhite;

@@ -97,24 +97,7 @@ const LectureList = () => {
                             <ListGroup.Item><img width="100%" height="100%" src="https://picsum.photos/800/600?random=1" /></ListGroup.Item>
                             </ListGroup>
                     </div>
-                    <div className='event-lecture'>
-                    <p className='event-lecture-header'>이벤트 강좌 목록</p>
-                    <ListGroup horizontal>
-                            <ListGroup.Item><img width="100%" height="100%" src="https://picsum.photos/800/600?random=1" /></ListGroup.Item>
-                            <ListGroup.Item><img width="100%" height="100%" src="https://picsum.photos/800/600?random=1" /></ListGroup.Item>
-                            <ListGroup.Item><img width="100%" height="100%" src="https://picsum.photos/800/600?random=1" /></ListGroup.Item>
-                            <ListGroup.Item><img width="100%" height="100%" src="https://picsum.photos/800/600?random=1" /></ListGroup.Item>
-                            </ListGroup>
-                    </div>
-                    <div className='price-down-lecture'>
-                    <p className='-lecture-header'>할인 강좌 목록</p>
-                    <ListGroup horizontal>
-                            <ListGroup.Item><img width="100%" height="100%" src="https://picsum.photos/800/600?random=1" /></ListGroup.Item>
-                            <ListGroup.Item><img width="100%" height="100%" src="https://picsum.photos/800/600?random=1" /></ListGroup.Item>
-                            <ListGroup.Item><img width="100%" height="100%" src="https://picsum.photos/800/600?random=1" /></ListGroup.Item>
-                            <ListGroup.Item><img width="100%" height="100%" src="https://picsum.photos/800/600?random=1" /></ListGroup.Item>
-                            </ListGroup>
-                    </div>
+                    
                 </div>
             </div>
         </>
