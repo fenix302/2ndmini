@@ -85,6 +85,11 @@ const Header = () => {
                                         <a class="dropdown-item">강좌 목록</a>
                                     </Link>
                                 </li>
+                                <li>
+                                    <Link to="/registration">
+                                        <a class="dropdown-item">수강 신청</a>
+                                    </Link>
+                                </li>
                             </ul>
                         </li>
 
