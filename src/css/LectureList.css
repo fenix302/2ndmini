@@ -10,6 +10,16 @@
     font-family: 'Noto Sans KR', sans-serif;
  }
 
+ img{
+   height: 100%;
+ }
+
+ a{
+   display: inline-block !important;
+    height: 100% !important;
+}
+ 
+
 .LectureList-header-text {
    font-size: 30px;
    color: #fff;
@@ -33,7 +43,6 @@
 
 .popular-lecture{
    width: 90% !important;
-   height: 100%;
    position: relative;
    margin: 0 auto !important;
 }
@@ -44,7 +53,7 @@
 }
 
 .main-lecture, .best-lecture, .recommend-lecture{
-   width: 90% !important;
+   width: 80% !important;
    height: 470px;
    position: relative;
    margin: 50px auto !important;
@@ -68,11 +77,6 @@
    left: -4% !important;
 }
 
-.bqyzQp{
-   /* 인기 강좌 4개 아이템의 길이를 조절합니다. */
-   top: 10%;
-   height: 70%;
-}
 
 
 @media (max-width: 464px){
@@ -84,6 +88,8 @@
 
 .popular{
    height: 14%;
+   padding-top: 5%;
+   padding-bottom: 5%;
 }
 
 .bWFaMA{
@@ -120,21 +126,17 @@
 @media (min-width:1024px){
    .popular-lecture{
       margin: 0 auto !important;
-   }
-   .LectureList{
-      height: 250vh;
-   }
-   .popular-lecture-header{
-      padding-top: 50px;
+      width: 80% !important;
+      padding-top: 5% !important;
+      padding-bottom: 5% !important;
+      
+      
    }
 
    .popular-lecture .bWFaMA{
       grid-template-columns: repeat(4,1fr);
    }
 
-   .popular{
-      height: 20%;
-   }
 
    .bhRnqO{
       top: calc(50% - 17.5px);
@@ -144,24 +146,20 @@
       top: calc(50% - 17.5px);
    }
 
-   .popular-lecture .bqyzQp{
-      height: 45%;
-   }
 
    .main-lecture, .best-lecture, .recommend-lecture{
-      margin: 5% auto !important;
       height: 38% !important;
+      margin: 5% auto !important;
    }
 
    .main-lecture-header, .best-lecture-header, .recommend-lecture-header{
-      margin-bottom: 6%;
+      margin-top: 3%;
    }
 }
 
 @media (max-width:1023px) and (min-width:768px) {
    .bWFaMA{
-      grid-template-columns: repeat(4,24%) !important;
-      /* grid-template-columns: repeat(4, 1fr); */
+     
       grid-template-rows: 1fr;
    }
    .bhRnqO{
@@ -177,8 +175,11 @@
    }
 
    .main-lecture, .best-lecture, .recommend-lecture {
-      margin: 0 auto 10% auto !important;
+      margin: 0 auto !important;
       height: 35%;
+      width: 90% !important;
+      padding-top: 5%;
+    padding-bottom: 5%;
    }
 
   .entire-lecture .bghjHX {
@@ -187,7 +188,7 @@
 
   .popular-lecture{
    margin: 0 auto !important;
-   height: 335px;
+   /* height: 335px; */
 
   }
 
@@ -205,7 +206,7 @@
 
 .bqyzQp{
    
-   height: 39%;
+   height: 125%;
 }
 
 .popular-lecture .bqyzQp{
@@ -225,6 +226,10 @@
       grid-template-columns: repeat(4,33%) !important;
    }
 
+   .bWFaMA:last-of-type > :last-of-type {
+      padding-right: 0px;
+      margin-right: 0px;
+  }
    .popular-lecture{
       margin: 0 auto !important;
    }
@@ -266,7 +271,7 @@
    }
    
    .bWFaMA{
-      grid-template-columns: repeat(4,55%) !important;
+      grid-template-columns: repeat(4,25%) !important;
    }
 
    .main-lecture, .best-lecture, .recommend-lecture .hLycdF{
@@ -274,9 +279,12 @@
    }
 
    .hLycdF{
-      grid-template-columns: repeat(4,90%);
+      grid-template-columns: repeat(4,80%);
    }
    
+   a{
+      height: 87% !important;
+   }
 }
 
 

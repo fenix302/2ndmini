@@ -51,47 +51,51 @@ const LectureList = () => {
                     <h3 className='popular-lecture-header'>인기 강좌 목록</h3>
                     <Carousel cols={4} rows={1} gap={20} breakpoint={767} loop>
                       
-                         <Carousel.Item>
+                         <Carousel.Item className='card'>
                        
-                                    <Link to="/registration/">
-                            <img width="100%" height="100%" src="https://picsum.photos/800/600?random=1" /> 
+                                    <Link to="/registration">
+                            <img width="100%" className='card-img-top' src="https://picsum.photos/800/600?random=1" /> 
                             </Link>
+                            <Card.Body>
+        <Card.Title>강좌이름</Card.Title>
+    
+        </Card.Body>
                           
                         </Carousel.Item>
                        
                         <Carousel.Item>
-                        <Link to="/registration/">
-                            <img width="100%" height="124%" src="https://picsum.photos/800/600?random=2" />
+                        <Link to="/registration">
+                            <img width="100%" src="https://picsum.photos/800/600?random=2" />
                             </Link>
                         </Carousel.Item>
                         <Carousel.Item>
-                        <Link to="/registration/">
-                            <img width="100%" height="124%" src="https://picsum.photos/800/600?random=3" />
+                        <Link to="/registration">
+                            <img width="100%" src="https://picsum.photos/800/600?random=3" />
                             </Link>
                         </Carousel.Item>
                         <Carousel.Item>
-                        <Link to="/registration/">
-                        <img width="100%" height="124%" src="https://picsum.photos/800/600?random=1" />
+                        <Link to="/registration">
+                        <img width="100%" src="https://picsum.photos/800/600?random=1" />
                         </Link>
                         </Carousel.Item>
                         <Carousel.Item>
-                        <Link to="/registration/">
-                        <img width="100%" height="124%" src="https://picsum.photos/800/600?random=1" />
+                        <Link to="/registration">
+                        <img width="100%" src="https://picsum.photos/800/600?random=1" />
                         </Link>
                         </Carousel.Item>
                         <Carousel.Item>
-                        <Link to="/registration/">
-                        <img width="100%" height="124%" src="https://picsum.photos/800/600?random=1" />
+                        <Link to="/registration">
+                        <img width="100%" src="https://picsum.photos/800/600?random=1" />
                         </Link>
                         </Carousel.Item>
                         <Carousel.Item>
-                        <Link to="/registration/">
-                        <img width="100%" height="124%" src="https://picsum.photos/800/600?random=1" />
+                        <Link to="/registration">
+                        <img width="100%" src="https://picsum.photos/800/600?random=1" />
                         </Link>
                         </Carousel.Item>
                         <Carousel.Item>
-                        <Link to="/registration/">
-                        <img width="100%" height="124%" src="https://picsum.photos/800/600?random=1" />
+                        <Link to="/registration">
+                        <img width="100%" src="https://picsum.photos/800/600?random=1" />
                         </Link>
                         </Carousel.Item>
                     </Carousel>
@@ -102,22 +106,22 @@ const LectureList = () => {
                         <h3 className='main-lecture-header'>대표 강좌 목록</h3>
                         <Carousel cols={4} rows={1} gap={20} breakpoint={767} loop>
                         <Carousel.Item>
-                        <Link to="/registration/">
+                        <Link to="/registration">
                             <img width="100%" height="124%" src="https://picsum.photos/800/600?random=1" />
                             </Link>
                         </Carousel.Item>
                         <Carousel.Item>
-                        <Link to="/registration/">
+                        <Link to="/registration">
                             <img width="100%" height="124%" src="https://picsum.photos/800/600?random=2" />
                             </Link>
                         </Carousel.Item>
                         <Carousel.Item>
-                        <Link to="/registration/">
+                        <Link to="/registration">
                             <img width="100%" height="124%" src="https://picsum.photos/800/600?random=3" />
                             </Link>
                         </Carousel.Item>
                         <Carousel.Item>
-                        <Link to="/registration/">
+                        <Link to="/registration">
                         <img width="100%" height="124%" src="https://picsum.photos/800/600?random=1" />
                         </Link>
                         </Carousel.Item>
@@ -127,22 +131,22 @@ const LectureList = () => {
                         <h3 className='best-lecture-header'>베스트 강좌 목록</h3>
                         <Carousel cols={4} rows={1} gap={20} breakpoint={767} loop>
                         <Carousel.Item>
-                        <Link to="/registration/">
+                        <Link to="/registration">
                             <img width="100%" height="124%" src="https://picsum.photos/800/600?random=1" />
                             </Link>
                         </Carousel.Item>
                         <Carousel.Item>
-                        <Link to="/registration/">
+                        <Link to="/registration">
                             <img width="100%" height="124%" src="https://picsum.photos/800/600?random=2" />
                             </Link>
                         </Carousel.Item>
                         <Carousel.Item>
-                        <Link to="/registration/">
+                        <Link to="/registration">
                             <img width="100%" height="124%" src="https://picsum.photos/800/600?random=3" />
                             </Link>
                         </Carousel.Item>
                         <Carousel.Item>
-                        <Link to="/registration/">
+                        <Link to="/registration">
                         <img width="100%" height="124%" src="https://picsum.photos/800/600?random=1" />
                         </Link>
                         </Carousel.Item>
@@ -152,22 +156,22 @@ const LectureList = () => {
                         <h3 className='recommend-lecture-header'>추천 강좌 목록</h3>
                         <Carousel cols={4} rows={1} gap={20} breakpoint={767} loop>
                         <Carousel.Item>
-                        <Link to="/registration/">
+                        <Link to="/registration">
                             <img width="100%" height="124%" src="https://picsum.photos/800/600?random=1" />
                             </Link>
                         </Carousel.Item>
                         <Carousel.Item>
-                        <Link to="/registration/">
+                        <Link to="/registration">
                             <img width="100%" height="124%" src="https://picsum.photos/800/600?random=2" />
                             </Link>
                         </Carousel.Item>
                         <Carousel.Item>
-                        <Link to="/registration/">
+                        <Link to="/registration">
                             <img width="100%" height="124%" src="https://picsum.photos/800/600?random=3" />
                             </Link>
                         </Carousel.Item>
                         <Carousel.Item>
-                        <Link to="/registration/">
+                        <Link to="/registration">
                         <img width="100%" height="124%" src="https://picsum.photos/800/600?random=1" />
                         </Link>
                         </Carousel.Item>
