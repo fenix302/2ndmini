@@ -5,7 +5,6 @@ import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
 import responsive from 'react-bootstrap/Figure';
 import { Container } from 'react-bootstrap';
-import useEffect from 'react-bootstrap/Image';
 import Carousel from 'react-grid-carousel'
 import "react-multi-carousel/lib/styles.css";
 import ListGroup from 'react-bootstrap/ListGroup';
@@ -21,12 +20,17 @@ const LectureList = () => {
           slidesToSlide: 4 // optional, default to 1.
         },
         tablet: {
-          breakpoint: { max: 1024, min: 464 },
-          items: 2,
-          slidesToSlide: 2 // optional, default to 1.
+          breakpoint: { max: 1023, min: 768 },
+          items: 3,
+          slidesToSlide: 3 // optional, default to 1.
         },
-        mobile: {
-          breakpoint: { max: 464, min: 0 },
+        mobile1: {
+            breakpoint: { max: 767, min: 464 },
+            items: 2,
+            slidesToSlide: 2 // optional, default to 1.
+          },
+        mobile2: {
+          breakpoint: { max: 463, min: 0 },
           items: 1,
           slidesToSlide: 1 // optional, default to 1.
         }

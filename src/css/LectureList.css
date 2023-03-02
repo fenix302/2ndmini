@@ -10,10 +10,13 @@
     font-family: 'Noto Sans KR', sans-serif;
  }
 
-.LectureList{
-   height: 290vh;
+.LectureList-header-text {
+   font-size: 30px;
+   color: #fff;
+   font-weight: 900;
+   line-height: 300px;
+   text-align: center;
 }
-
 .LectureList-header{
     max-width: 100%;
     height: 300px;
@@ -30,14 +33,13 @@
 
 .popular-lecture{
    width: 90% !important;
-   height: 470px;
+   height: 100%;
    position: relative;
-   margin: 100px auto !important;
+   margin: 0 auto !important;
 }
 
 .entire-lecture{
    width: 100%;
-   height: 140vh;
    background-color: #fff;
 }
 
@@ -73,23 +75,51 @@
 }
 
 
-@media screen and (max-width: 767px){
+@media (max-width: 464px){
 /* 인기강좌 반응형 크기 조절 */
 .hLycdF {
-    grid-template-columns: repeat(4,25%) !important;
+    grid-template-columns: repeat(4, 83%) !important;
     padding-left: 0 !important;
+}
+
+.popular{
+   height: 14%;
+}
+
+.bWFaMA{
+   grid-template-columns: repeat(4,89%);
 }
 
 
 .popular-lecture .hLycdF{
    grid-template-columns: repeat(2, 90%) !important;
 }
+
+.bhRnqO{
+   display: none;
+}
+
+.main-lecture, .best-lecture, .recommend-lecture{
+   margin: 8% auto !important;
+   height: 100%;
+
+}
+
+.popular-lecture-header{
+   position: relative;
+   padding-top: 10%;
+   top: 6%;
+}
+
+.popular-lecture{
+   padding: 0 0% 9% 3%;
+}
 }
 
 
 @media (min-width:1024px){
    .popular-lecture{
-        margin: 0 auto !important;
+      margin: 0 auto !important;
    }
    .LectureList{
       height: 250vh;
@@ -102,25 +132,36 @@
       grid-template-columns: repeat(4,1fr);
    }
 
+   .popular{
+      height: 20%;
+   }
 
    .bhRnqO{
-      top: calc(40% - 17.5px) !important;
+      top: calc(50% - 17.5px);
    }
  
    .kVtMtA{
-      top: calc(40% - 17.5px) !important;
+      top: calc(50% - 17.5px);
+   }
+
+   .popular-lecture .bqyzQp{
+      height: 45%;
+   }
+
+   .main-lecture, .best-lecture, .recommend-lecture{
+      margin: 5% auto !important;
+      height: 38% !important;
+   }
+
+   .main-lecture-header, .best-lecture-header, .recommend-lecture-header{
+      margin-bottom: 6%;
    }
 }
 
-@media (max-width:464px){
-   .bhRnqO{
-      display: none;
-   }
-}
-
-@media (max-width:1024px) and (min-width:464px) {
+@media (max-width:1023px) and (min-width:768px) {
    .bWFaMA{
-      grid-template-columns: repeat(4, 1fr);
+      grid-template-columns: repeat(4,24%) !important;
+      /* grid-template-columns: repeat(4, 1fr); */
       grid-template-rows: 1fr;
    }
    .bhRnqO{
@@ -130,12 +171,14 @@
       display: none;
    }
    .bghjHX{
-      height: 100% !important;
+      height: 50%;
+    line-height: 50%;
 
    }
 
    .main-lecture, .best-lecture, .recommend-lecture {
-      margin: 0 auto !important;
+      margin: 0 auto 10% auto !important;
+      height: 35%;
    }
 
   .entire-lecture .bghjHX {
@@ -160,10 +203,84 @@
    overflow: visible;
 }
 
+.bqyzQp{
+   
+   height: 39%;
 }
+
+.popular-lecture .bqyzQp{
+   height: 140%;
+}
+
+.hLycdF{
+   grid-template-columns: repeat(4,75%);
+}
+
+
+
+}
+
+@media (max-width:767px) and (min-width:465px){
+   .bWFaMA{
+      grid-template-columns: repeat(4,33%) !important;
+   }
+
+   .popular-lecture{
+      margin: 0 auto !important;
+   }
+
+   .popular-lecture-header{
+      padding-top: 6%;
+      padding-bottom: 6%;
+   }
+
+   .qFTwe{
+      grid-template-columns: repeat(1,100%);
+   }
+
+   .popular{
+      height: 20%;
+   }
+
+   .main-lecture{
+      margin: 50px auto;
+   }
+
+   .best-lecture, .recommend-lecture{
+      margin: 0 auto;
+   }
+
+   .main-lecture, .best-lecture, .recommend-lecture {
+      height: 30%;
+      margin-bottom: 6%;
+   }
+
+   .LectureList{
+      height: 230vh;
+   }
+
+   .popular-lecture{
+      height: 15%;
+      margin: 0px auto !important;
+      
+   }
+   
+   .bWFaMA{
+      grid-template-columns: repeat(4,55%) !important;
+   }
+
+   .main-lecture, .best-lecture, .recommend-lecture .hLycdF{
+      grid-template-columns: repeat(4,50%) !important;
+   }
+
+   .hLycdF{
+      grid-template-columns: repeat(4,90%);
+   }
+   
+}
+
 
 div.list-group-item{
    height: 330px;
 }
-
 
