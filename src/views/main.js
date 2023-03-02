@@ -25,7 +25,7 @@ const Main = () => {
 
           <div class="inner_group">
             {/* 컨텐츠1 */}
-            <Link to="/LectureList">
+            <Link to="/registration">
               <div class="item1">
                 <div class="img">
                     <a><img src="img/guitar.jpg" /></a>
@@ -38,7 +38,7 @@ const Main = () => {
             </Link>
 
             {/* 컨텐츠2 */}
-            <Link to="/LectureList">  
+            <Link to="/registration">  
               <div class="item2">
                 <div class="img">
                   <a><img src="img/kids.png" /></a>
@@ -50,7 +50,7 @@ const Main = () => {
             </Link>
 
             {/* 컨텐츠3 */}
-            <Link to="/LectureList">
+            <Link to="/registration">
               <div class="item4">
                 <div class="img">
                   <a><img src="img/calligraphy.jpg" /></a>
@@ -63,7 +63,7 @@ const Main = () => {
             </Link>
 
             {/* 컨텐츠4 */}
-            <Link to="/LectureList">
+            <Link to="/registration">
               <div class="item4">
                 <div class="img">
                   <a><img src="img/yoga.jpg" /></a>
@@ -86,29 +86,6 @@ const Main = () => {
             </div>
         </div>
       </div>
-
-
-        
-      {/* 버튼 삭제예정입니다~
-        <Link to="/BoardList">
-          <Button variant="outline-secondary" size='lg'>게시판 리스트</Button>
-        </Link>
-
-        <Link to="/Insert">
-          <Button variant="outline-secondary" size='lg'>게시글 등록</Button>
-        </Link>
-        <Link to="/View">
-          <Button variant="outline-secondary" size='lg'>최근 게시글 보기</Button>
-        </Link>
-        <Link to="/Update">
-          <Button variant="outline-secondary" size='lg'>최근 게시글 수정</Button>
-        </Link>
-        <Link to="/Delete">
-          <Button variant="outline-secondary" size='lg'>최근 게시글 삭제</Button>
-        </Link>
-        <Link to="/Faq">
-          <Button variant="outline-secondary" size='lg'>Faq</Button>
-        </Link> */}
 
     </>
   );
