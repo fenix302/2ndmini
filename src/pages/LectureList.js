@@ -57,7 +57,7 @@ const LectureList = () => {
                             <img width="100%" className='card-img-top' src="img/paper.jpg" /> 
                             </Link>
                             <Card.Body>
-        <Card.Title>강좌이름</Card.Title>
+        <Card.Title>종이접기 교실</Card.Title>
     
         </Card.Body>
                           
@@ -65,38 +65,66 @@ const LectureList = () => {
                        
                         <Carousel.Item>
                         <Link to="/registration">
-                            <img width="100%" src="img/cook.jpg" />
+                            <img width="100%" className='card-img-top' src="img/cook.jpg" />
                             </Link>
+                            <Card.Body>
+        <Card.Title>신나는 쿠킹시간</Card.Title>
+    
+        </Card.Body>
                         </Carousel.Item>
                         <Carousel.Item>
                         <Link to="/registration">
-                            <img width="100%" src="img/facepaint.jpg" />
+                            <img width="100%" className='card-img-top' src="img/facepaint.jpg" />
                             </Link>
+                            <Card.Body>
+        <Card.Title>페이스 페인팅</Card.Title>
+    
+        </Card.Body>
                         </Carousel.Item>
                         <Carousel.Item>
                         <Link to="/registration">
-                        <img width="100%" src="img/tea.jpg" />
+                        <img width="100%" className='card-img-top' src="img/tea.jpg" />
                         </Link>
+                        <Card.Body>
+        <Card.Title>찻잎 이야기</Card.Title>
+    
+        </Card.Body>
                         </Carousel.Item>
                         <Carousel.Item>
                         <Link to="/registration">
-                        <img width="100%" src="img/book.jpg" />
+                        <img width="100%" className='card-img-top' src="img/book.jpg" />
                         </Link>
+                        <Card.Body>
+        <Card.Title>강좌이름</Card.Title>
+    
+        </Card.Body>
                         </Carousel.Item>
                         <Carousel.Item>
                         <Link to="/registration">
-                        <img width="100%" src="img/sewingmachine.jpg" />
+                        <img width="100%" className='card-img-top' src="img/sewingmachine.jpg" />
                         </Link>
+                        <Card.Body>
+        <Card.Title>강좌이름</Card.Title>
+    
+        </Card.Body>
                         </Carousel.Item>
                         <Carousel.Item>
                         <Link to="/registration">
-                        <img width="100%" src="img/knitting.jpg" />
+                        <img width="100%" className='card-img-top' src="img/knitting.jpg" />
                         </Link>
+                        <Card.Body>
+        <Card.Title>강좌이름</Card.Title>
+    
+        </Card.Body>
                         </Carousel.Item>
                         <Carousel.Item>
                         <Link to="/registration">
-                        <img width="100%" src="img/magic.jpg" />
+                        <img width="100%" className='card-img-top' src="img/magic.jpg" />
                         </Link>
+                        <Card.Body>
+        <Card.Title>강좌이름</Card.Title>
+    
+        </Card.Body>
                         </Carousel.Item>
                     </Carousel>
                     </div>
@@ -107,23 +135,39 @@ const LectureList = () => {
                         <Carousel cols={4} rows={1} gap={20} breakpoint={767} loop>
                         <Carousel.Item>
                         <Link to="/registration">
-                            <img width="100%" height="124%" src="https://picsum.photos/800/600?random=1" />
+                            <img width="100%" className='card-img-top' src="img/doll.jpg" />
                             </Link>
+                            <Card.Body>
+        <Card.Title>강좌이름</Card.Title>
+    
+        </Card.Body>
                         </Carousel.Item>
                         <Carousel.Item>
                         <Link to="/registration">
-                            <img width="100%" height="124%" src="https://picsum.photos/800/600?random=2" />
+                            <img width="100%" className='card-img-top' src="img/potterycraft.jpg" />
                             </Link>
+                            <Card.Body>
+        <Card.Title>강좌이름</Card.Title>
+    
+        </Card.Body>
                         </Carousel.Item>
                         <Carousel.Item>
                         <Link to="/registration">
-                            <img width="100%" height="124%" src="https://picsum.photos/800/600?random=3" />
+                            <img width="100%" className='card-img-top' src="img/English.jpg" />
                             </Link>
+                            <Card.Body>
+        <Card.Title>강좌이름</Card.Title>
+    
+        </Card.Body>
                         </Carousel.Item>
                         <Carousel.Item>
                         <Link to="/registration">
-                        <img width="100%" height="124%" src="https://picsum.photos/800/600?random=1" />
+                        <img width="100%" className='card-img-top' src="img/modernart.jpg" />
                         </Link>
+                        <Card.Body>
+        <Card.Title>강좌이름</Card.Title>
+    
+        </Card.Body>
                         </Carousel.Item>
                         </Carousel>
                     </div>
@@ -132,23 +176,39 @@ const LectureList = () => {
                         <Carousel cols={4} rows={1} gap={20} breakpoint={767} loop>
                         <Carousel.Item>
                         <Link to="/registration">
-                            <img width="100%" height="124%" src="https://picsum.photos/800/600?random=1" />
+                            <img width="100%" className='card-img-top' src="img/hair.jpg" />
                             </Link>
+                            <Card.Body>
+        <Card.Title>강좌이름</Card.Title>
+    
+        </Card.Body>
                         </Carousel.Item>
                         <Carousel.Item>
                         <Link to="/registration">
-                            <img width="100%" height="124%" src="https://picsum.photos/800/600?random=2" />
+                            <img width="100%" className='card-img-top' src="img/exercise.jpg" />
                             </Link>
+                            <Card.Body>
+        <Card.Title>강좌이름</Card.Title>
+    
+        </Card.Body>
                         </Carousel.Item>
                         <Carousel.Item>
                         <Link to="/registration">
-                            <img width="100%" height="124%" src="https://picsum.photos/800/600?random=3" />
+                            <img width="100%" className='card-img-top' src="img/dance.jpg" />
                             </Link>
+                            <Card.Body>
+        <Card.Title>강좌이름</Card.Title>
+    
+        </Card.Body>
                         </Carousel.Item>
                         <Carousel.Item>
                         <Link to="/registration">
-                        <img width="100%" height="124%" src="https://picsum.photos/800/600?random=1" />
+                        <img width="100%" className='card-img-top' src="img/violin.jpg" />
                         </Link>
+                        <Card.Body>
+        <Card.Title>강좌이름</Card.Title>
+    
+        </Card.Body>
                         </Carousel.Item>
                         </Carousel>
                     </div>
@@ -157,23 +217,39 @@ const LectureList = () => {
                         <Carousel cols={4} rows={1} gap={20} breakpoint={767} loop>
                         <Carousel.Item>
                         <Link to="/registration">
-                            <img width="100%" height="124%" src="https://picsum.photos/800/600?random=1" />
+                            <img width="100%" className='card-img-top' src="img/drawing.jpg" />
                             </Link>
+                            <Card.Body>
+        <Card.Title>강좌이름</Card.Title>
+    
+        </Card.Body>
                         </Carousel.Item>
                         <Carousel.Item>
                         <Link to="/registration">
-                            <img width="100%" height="124%" src="https://picsum.photos/800/600?random=2" />
+                            <img width="100%" className='card-img-top' src="img/writing.jpg" />
                             </Link>
+                            <Card.Body>
+        <Card.Title>강좌이름</Card.Title>
+    
+        </Card.Body>
                         </Carousel.Item>
                         <Carousel.Item>
                         <Link to="/registration">
-                            <img width="100%" height="124%" src="https://picsum.photos/800/600?random=3" />
+                            <img width="100%" className='card-img-top' src="img/flower.jpg" />
                             </Link>
+                            <Card.Body>
+        <Card.Title>강좌이름</Card.Title>
+    
+        </Card.Body>
                         </Carousel.Item>
                         <Carousel.Item>
                         <Link to="/registration">
-                        <img width="100%" height="124%" src="https://picsum.photos/800/600?random=1" />
+                        <img width="100%" className='card-img-top' src="img/poem.jpg" />
                         </Link>
+                        <Card.Body>
+        <Card.Title>강좌이름</Card.Title>
+    
+        </Card.Body>
                         </Carousel.Item>
                      
                         

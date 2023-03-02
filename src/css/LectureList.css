@@ -133,8 +133,14 @@
       
    }
 
+   .card-title{
+      text-align: center;
+      padding-top: 3% !important;
+   }
+
    .popular-lecture .bWFaMA{
       grid-template-columns: repeat(4,1fr);
+      padding-bottom: 3% !important;
    }
 
 
