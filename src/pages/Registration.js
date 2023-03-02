@@ -84,7 +84,7 @@ function Registration(props){
                     <Row lg="2" xs="1">
                         <Col lg="10">
                             <p>[3/19 10:00] 
-                            <br/>구로 문화센터 강좌제목 수강신청
+                            <br/>구로 문화센터 수강신청
                             </p>
                         </Col>
                         <Col lg="2">
@@ -100,8 +100,8 @@ function Registration(props){
                                     <h3>강좌 소개</h3>
                                 </div>
                                 <div className="LectureArea">
-                                    <img src="logo192.png"/>
-                                    <h5>강좌 제목</h5><br/  >
+                                    <img src="/img/designLecture.jpg"/>
+                                    <h5>감성 디자인</h5><br/  >
                                     <span>
                                         창의성과 감성이 풍부해지는 실질적인 강좌
                                         <br/>
@@ -131,8 +131,9 @@ function Registration(props){
                         <div className="rightArea">
                             <div className="LectureRight">
                                 <div className="LectureImage">
-                                    <img src="logo192.png" />
+                                    <img src="/img/designLecture.jpg" />
                                 </div>
+                                <br/>
                                 <div className="LectureTable">
                                     <Table bordered>
                                         <tbody>
