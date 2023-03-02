@@ -30,18 +30,6 @@ class BoardList extends Component {
 		   });
 		  });   
 	 }
-  
-	 getList() {
-		axios.get("/select.do").then((res) => {
-		   const data = res.data;
-		   this.setState({
-			 bno: data.bno,
-			 title: data.title,
-			 writer: data.writer,
-		   });
-		  });   
-	 }
-	
 
     render() {
 		
@@ -64,7 +52,7 @@ class BoardList extends Component {
 							<th>번호</th>
 							<th>제목</th>
 							<th>작성자</th>
-							<th>액션</th>
+							<th></th>
 						</tr>
 					</thead>
 					<tbody>
@@ -89,7 +77,6 @@ class BoardList extends Component {
 				</Table>
 			</Container>
 			</>  
-			
 		);
     }
 }
