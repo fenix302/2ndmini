@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import { Link } from 'react-router-dom'
-import { Container, Table, Button, Col, Form } from 'react-bootstrap'
-import ReactPaginate from 'react-js-pagination'
+import { Container, Table, Button} from 'react-bootstrap'
 import axios from 'axios'
 
 import "../css/list.css"
@@ -12,17 +11,15 @@ class BoardList extends Component {
 		super(props)
   
 		this.state = {
-		   data: [],
 		   page: 0,
 		   count: 0,
 		   perPage: 0,
 		   search: null,
-		   boards: []
+		   data: [], 
 		}
-		
-		this.getList();
+		this.getDetail();
 	 }
-  
+
 	 getDetail() {
 		axios.get("/view.do").then((res) => {
 		   const data = res.data;
@@ -30,9 +27,7 @@ class BoardList extends Component {
 			 bno: data.bno,
 			 title: data.title,
 			 writer: data.writer,
-			 regdate: data.regdate    
 		   });
-		   console.log(res)
 		  });   
 	 }
   
@@ -43,18 +38,15 @@ class BoardList extends Component {
 			 bno: data.bno,
 			 title: data.title,
 			 writer: data.writer,
-			 regdate: data.regdate    
 		   });
-		   console.log(res)
 		  });   
 	 }
 	
-	
 
     render() {
-		const {page, count, perPage, title, writer, regdate, data, bno } = this.state
 		
-
+		const { bno, title, writer} = this.state
+		
         return (
 			<>
 			<div className="board_header">
@@ -72,37 +64,37 @@ class BoardList extends Component {
 							<th>번호</th>
 							<th>제목</th>
 							<th>작성자</th>
-							<th>작성일</th>
+							<th>액션</th>
 						</tr>
 					</thead>
-						
+					<tbody>
+						<tr>
+							<td>
+								<Link to={`/View`}>{bno}</Link>
+							</td>
+							<td>
+								<Link to={`/View`}>{title}</Link>
+							</td>
+							<td>{writer}</td>
+							<td>
+								<Link to="/Update">
+								<button className="update btn2 btn-danger" type="button">수정</button>
+								</Link>
+								<Link to="/Delete">
+								<button className="delete btn2 btn-danger" type="button">삭제</button>
+								</Link>
+							</td>
+						</tr>			
+					</tbody>
 				</Table>
-				<Table>
-                    <Col md={2}>
-                        <Form.Group>
-                            <Form.Control  type='text' onChange={(event) => this.setState({ search: event.target.value })}/>
-                        </Form.Group>
-                        <Button className='search btn-secondary btn-dark' onClick={() => this.search()}>검색</Button>
-                    </Col>
-                {/* 페이징 처리 */}
-					<ReactPaginate
-						activePage={page}
-						totalItemsCount={count}
-						itemsCountPerPage={perPage}
-						onChange={page => this.handlePage(page)}
-						
-						innerClass='pagination'
-						itemClass='page-item'
-						activeClass='active'
-
-						nextPageText='다음'
-						prevPageText='이전'
-						/>
-                </Table>
 			</Container>
 			</>  
-        );
+			
+		);
     }
 }
 
 export default BoardList;
+
+
+

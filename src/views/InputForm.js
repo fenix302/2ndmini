@@ -11,7 +11,6 @@ class InputForm extends Component {
       title: "",
       content: "",
       writer: "",
-      regdate: "",
       crud: props.match.params.crud,
     };
     if (this.state.crud !== "Insert") {
@@ -41,7 +40,7 @@ class InputForm extends Component {
       const crudName =
       crud === "Update" ? "수정" : crud === "Insert" ? "등록" : "삭제";
       return (
-        <button className="btn2 btn-secondary" onClick={() => this.crud()}> {crudName}하기</button>
+        <button className="btn2 btn-secondary" onClick={() => this.crud()}> {crudName}</button>
       );
     }
   }
@@ -56,7 +55,7 @@ class InputForm extends Component {
     } else if (crud === "Delete") {
       crudType = "/deleteProcess.do";
     } else if (crud === "Insert") {
-      crudType = "  /insertProcess.do";
+      crudType = " /insertProcess.do";
     } else if (crud === "View") {
       return null;
     }
@@ -86,7 +85,6 @@ class InputForm extends Component {
         title: data.title,
         writer: data.writer,
         content: data.content,
-        regdate: data.regdate
       });
     });
   }
@@ -161,7 +159,7 @@ class InputForm extends Component {
           <br /> <br />
           {this.createCrudBtn()}
           <Link to="/BoardList">
-            <button className="btn2 btn-danger" type="button">돌아가기</button>
+            <button className="btn2 btn-danger" type="button">목록</button>
           </Link>
         </Container>  
       </>

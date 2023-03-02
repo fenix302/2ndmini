@@ -1,5 +1,7 @@
 .pagination{
-    float: right;
+    position: absolute;
+    left: 45%;
+    margin-top: 50px;
 }
 
 .write{
@@ -11,7 +13,28 @@ Table > thead > tr > th{
     line-height: 40px;
 }
 
-Table > tbody > td{
+Table > tbody > tr > td{
     text-align: center !important;
     line-height: 50px;
+}
+
+Table > tbody > tr > td > a{
+    color: black;
+}
+
+Table > tbody > tr > td > a:hover{
+    font-weight: bold;
+    color: black;
+}
+
+.search{
+    float: right !important;
+}
+
+.update{
+    margin-top: 0;
+}
+
+.delete{
+    margin-top: 0;
 }
