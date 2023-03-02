@@ -25,32 +25,55 @@ function Registration(props){
 
 
     
-    const checkSignup = (e) =>{
+    const checkSignup = () =>{
         const name = document.getElementById('LECTURE_NAME').value;
         const email = document.getElementById('LECTURE_EMAIL').value;
         const address = document.getElementById('LECTURE_ADDRESS').value;
         const tel = document.getElementById('LECTURE_TEL').value;
-        e.preventDefault();
+
+        if(document.getElementById("LECTURE_NAME").value.length < 1){
+         alert("이름을 입력하세요.");
+			document.getElementById("LECTURE_NAME").focus()
+			return;
+		}
+		
+		if(document.getElementById("LECTURE_EMAIL").value.length < 1){
+         alert("이메일 주소를 입력하세요.");
+			document.getElementById("LECTURE_EMAIL").focus()
+			return;
+		}
+        if(document.getElementById("LECTURE_ADDRESS").value.length < 1){
+        alert("주소를 입력하세요.");
+            document.getElementById("LECTURE_ADDRESS").focus()
+            return;
+        }
+           
+        if(document.getElementById("LECTURE_TEL").value.length < 1){
+        alert("전화번호를 입력하세요.");
+            document.getElementById("LECTURE_TEL").focus()
+            return;
+        }
+
+
         const form = new FormData();
-        axios('/insertMember.do', {
-            method: "POST",
-            body:form,
-            headers:{ 
-                'Content-type': 'multipart/form-data', 
-                  } 
-        })
-        .then((response) => {
-                response.header("Access-Control-Allow-Origin", "*")
-            if(response.ok === true){
-                return response.json();
-            }
-            throw new Error("에러발생");
+            form.append('name', name);
+            form.append('email', email);
+            form.append('address', address);
+            form.append('tel', tel);
+        axios.post('http://localhost:9008/insertMember.do',
+            form
+        ,{ 
+          headers:{ 
+           'Content-type': 'application/json', 
+            } 
+        }
+        )
+        .then((res) => {
+            alert("신청되었습니다.")
+            document.location.href="/registration"
         })
         .catch((error) => {
             alert(error)
-        })
-        .then((data) => {
-            console.log(data)
         })
     }
 
