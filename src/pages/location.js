@@ -17,8 +17,8 @@ const Kakaomap = () => {
       const map = new kakao.maps.Map(mapContainer, mapOption);
 
       var markerPosition = new kakao.maps.LatLng(
-         37.567283765403744,
-         126.97895774407993
+        37.503174,
+        126.879052
       );
       var marker = new kakao.maps.Marker({
          position: markerPosition,
