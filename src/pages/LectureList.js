@@ -54,7 +54,7 @@ const LectureList = () => {
                          <Carousel.Item className='card'>
                        
                                     <Link to="/registration">
-                            <img width="100%" className='card-img-top' src="https://picsum.photos/800/600?random=1" /> 
+                            <img width="100%" className='card-img-top' src="img/paper.jpg" /> 
                             </Link>
                             <Card.Body>
         <Card.Title>강좌이름</Card.Title>
@@ -65,12 +65,12 @@ const LectureList = () => {
                        
                         <Carousel.Item>
                         <Link to="/registration">
-                            <img width="100%" src="https://picsum.photos/800/600?random=2" />
+                            <img width="100%" src="img/cook.jpg" />
                             </Link>
                         </Carousel.Item>
                         <Carousel.Item>
                         <Link to="/registration">
-                            <img width="100%" src="https://picsum.photos/800/600?random=3" />
+                            <img width="100%" src="img/facepaint.jpg" />
                             </Link>
                         </Carousel.Item>
                         <Carousel.Item>
