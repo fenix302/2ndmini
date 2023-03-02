@@ -60,7 +60,7 @@ function Registration(props){
             form.append('email', email);
             form.append('address', address);
             form.append('tel', tel);
-        axios.post('http://localhost:9008/insertMember.do',
+        axios.post('/insertMember.do',
             form
         ,{ 
           headers:{ 
@@ -82,13 +82,10 @@ function Registration(props){
             <Container>
                 <div className="registLec">
                     <Row lg="2" xs="1">
-                        <Col lg="10">
+                        <Col lg="12">
                             <p>[3/19 10:00] 
                             <br/>구로 문화센터 수강신청
                             </p>
-                        </Col>
-                        <Col lg="2">
-                            <Button size="lg" color="primary" type="submit" value="Submit" onClick={checkSignup}>신청하기</Button>
                         </Col>
                     </Row>
                 </div>
@@ -209,7 +206,14 @@ function Registration(props){
                     </Col>
                 </Row>
                 <br /><br />
-                <h1>구로 문화센터 강의 신청서 작성</h1>
+                <Row lg="2" xs="1">
+                    <Col lg="10">
+                        <h1>구로 문화센터 강의 신청서 작성</h1>
+                    </Col>
+                    <Col lg="2">
+                        <Button size="lg" color="primary" type="submit" value="Submit" onClick={checkSignup}>신청하기</Button>
+                    </Col>
+                </Row>
                 <br />
                 <br />
                 <form id="lecMember">
