@@ -1,9 +1,10 @@
 import axios from "axios";
-import React,{useEffect} from "react";
-import { Container, Row, Col, Table, Button, Form, FormGroup, Label, Input } from "reactstrap";
+import React,{useEffect, useState} from "react";
+import { Container, Row, Col, Table, Button, FormGroup, Label, Input, Form } from "reactstrap";
 import '../css/registration.css'
 
 function Registration(props){
+ 
     useEffect(()=>{
         axios.get("/selectLecture.do")
         .then((res) =>{
@@ -21,6 +22,38 @@ function Registration(props){
     const lectureRoom = sessionStorage.lectureRoom;
     const studentNum = sessionStorage.studentNum;
     const lecturePrice = sessionStorage.lecturePrice;
+
+
+    
+    const checkSignup = (e) =>{
+        const name = document.getElementById('LECTURE_NAME').value;
+        const email = document.getElementById('LECTURE_EMAIL').value;
+        const address = document.getElementById('LECTURE_ADDRESS').value;
+        const tel = document.getElementById('LECTURE_TEL').value;
+        e.preventDefault();
+        const form = new FormData();
+        axios('/insertMember.do', {
+            method: "POST",
+            body:form,
+            headers:{ 
+                'Content-type': 'multipart/form-data', 
+                  } 
+        })
+        .then((response) => {
+                response.header("Access-Control-Allow-Origin", "*")
+            if(response.ok === true){
+                return response.json();
+            }
+            throw new Error("에러발생");
+        })
+        .catch((error) => {
+            alert(error)
+        })
+        .then((data) => {
+            console.log(data)
+        })
+    }
+
     return(
         <>
             <Container>
@@ -32,7 +65,7 @@ function Registration(props){
                             </p>
                         </Col>
                         <Col lg="2">
-                            <Button size="lg" color="primary" type="submit" value="Submit">신청하기</Button>
+                            <Button size="lg" color="primary" type="submit" value="Submit" onClick={checkSignup}>신청하기</Button>
                         </Col>
                     </Row>
                 </div>
@@ -155,63 +188,57 @@ function Registration(props){
                 <h1>구로 문화센터 강의 신청서 작성</h1>
                 <br />
                 <br />
-                <Form>
+                <form id="lecMember">
                     <Row>
                         <Col md={6}>
                         <FormGroup>
-                            <Label for="name">
+                            <Label for="LECTURE_NAME">
                             이름
                             </Label>
                             <Input
-                            id="name"
-                            name="name"
+                            id="LECTURE_NAME"
+                            name="LECTURE_NAME"
                             placeholder="이름을 입력해 주세요"
                             type="name"
-                            formMethod="post"
                             />
                         </FormGroup>
                         </Col>
                         <Col md={6}>
                         <FormGroup>
-                            <Label for="email">
+                            <Label for="LECTURE_EMAIL">
                             이메일
                             </Label>
                             <Input
-                            id="email"
-                            name="email"
+                            id="LECTURE_EMAIL"
+                            name="LECTURE_EMAIL"
                             placeholder="이메일을 입력해 주세요"
                             type="email"
-                            formMethod="post"
                             />
                         </FormGroup>
                         </Col>
                         <FormGroup>
-                            <Label for="address">
+                            <Label for="LECTURE_ADDRESS">
                             주소
                             </Label>
                             <Input
-                            id="address"
-                            name="address"
+                            id="LECTURE_ADDRESS"
+                            name="LECTURE_ADDRESS"
                             placeholder="주소를 입력해 주세요"
-                            formMethod="post"
+                            
                             />
                         </FormGroup>
                         <FormGroup>
-                            <Label for="tel">
+                            <Label for="LECTURE_TEL">
                             전화번호
                             </Label>
                             <Input
-                            id="tel"
-                            name="tel"
+                            id="LECTURE_TEL"
+                            name="LECTURE_TEL"
                             placeholder="전화번호를 입력해 주세요"
-                            formMethod="post"
-                            type="number"
                             />
                         </FormGroup>
                     </Row>
-                </Form>
-                <br />
-                <br />
+                </form>
             </Container>
 
         </>
