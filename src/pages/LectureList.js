@@ -75,27 +75,27 @@ const LectureList = () => {
                         </Carousel.Item>
                         <Carousel.Item>
                         <Link to="/registration">
-                        <img width="100%" src="https://picsum.photos/800/600?random=1" />
+                        <img width="100%" src="img/tea.jpg" />
                         </Link>
                         </Carousel.Item>
                         <Carousel.Item>
                         <Link to="/registration">
-                        <img width="100%" src="https://picsum.photos/800/600?random=1" />
+                        <img width="100%" src="img/book.jpg" />
                         </Link>
                         </Carousel.Item>
                         <Carousel.Item>
                         <Link to="/registration">
-                        <img width="100%" src="https://picsum.photos/800/600?random=1" />
+                        <img width="100%" src="img/sewingmachine.jpg" />
                         </Link>
                         </Carousel.Item>
                         <Carousel.Item>
                         <Link to="/registration">
-                        <img width="100%" src="https://picsum.photos/800/600?random=1" />
+                        <img width="100%" src="img/knitting.jpg" />
                         </Link>
                         </Carousel.Item>
                         <Carousel.Item>
                         <Link to="/registration">
-                        <img width="100%" src="https://picsum.photos/800/600?random=1" />
+                        <img width="100%" src="img/magic.jpg" />
                         </Link>
                         </Carousel.Item>
                     </Carousel>
