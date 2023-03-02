@@ -31,24 +31,24 @@ function Registration(props){
         const address = document.getElementById('LECTURE_ADDRESS').value;
         const tel = document.getElementById('LECTURE_TEL').value;
 
-        if(document.getElementById("LECTURE_NAME").value.length < 1){
+        if(name.length < 1){
          alert("이름을 입력하세요.");
 			document.getElementById("LECTURE_NAME").focus()
 			return;
 		}
 		
-		if(document.getElementById("LECTURE_EMAIL").value.length < 1){
+		if(email.length < 1){
          alert("이메일 주소를 입력하세요.");
 			document.getElementById("LECTURE_EMAIL").focus()
 			return;
 		}
-        if(document.getElementById("LECTURE_ADDRESS").value.length < 1){
+        if(address.length < 1){
         alert("주소를 입력하세요.");
             document.getElementById("LECTURE_ADDRESS").focus()
             return;
         }
            
-        if(document.getElementById("LECTURE_TEL").value.length < 1){
+        if(tel.length < 1){
         alert("전화번호를 입력하세요.");
             document.getElementById("LECTURE_TEL").focus()
             return;
