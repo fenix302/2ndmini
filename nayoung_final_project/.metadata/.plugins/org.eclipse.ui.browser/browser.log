@@ -1,0 +1,12 @@
+
+3월 22, 2023 13:35:38.190 NEW SESSION
+3월 22, 2023 13:35:38.190 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+3월 22, 2023 13:37:47.372 [10880:1728:0322/133747.372:ERROR:get_updates_processor.cc(264)] PostClientToServerMessage() failed during GetUpdates with error 2
+3월 22, 2023 13:39:00.308 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+3월 22, 2023 13:40:47.318 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+3월 22, 2023 13:42:20.649 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+3월 22, 2023 13:42:50.832 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+3월 22, 2023 13:49:27.826 [252:13116:0322/134927.826:ERROR:get_updates_processor.cc(264)] PostClientToServerMessage() failed during GetUpdates with error 2
+3월 22, 2023 13:50:16.854 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+3월 22, 2023 13:50:31.793 [12160:1712:0322/135031.793:ERROR:get_updates_processor.cc(264)] PostClientToServerMessage() failed during GetUpdates with error 2
+3월 22, 2023 13:56:42.23 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
